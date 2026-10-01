@@ -15,6 +15,8 @@
  */
 package com.aiai.core.base
 
+import android.view.View
+import androidx.viewbinding.ViewBinding
 import com.aiai.common.ext.launchWhenStarted
 import com.aiai.common.util.other.Logger
 
