@@ -63,7 +63,7 @@ object WifiUtil {
                 false
             } else {
                 @Suppress("DEPRECATION")
-                wifiManager.isWifiEnabled = true
+                @Suppress("DEPRECATION") wifiManager.setWifiEnabled(true)
             }
         } else {
             true
@@ -84,7 +84,7 @@ object WifiUtil {
                 false
             } else {
                 @Suppress("DEPRECATION")
-                wifiManager.isWifiEnabled = false
+                @Suppress("DEPRECATION") wifiManager.setWifiEnabled(false)
             }
         } else {
             true
