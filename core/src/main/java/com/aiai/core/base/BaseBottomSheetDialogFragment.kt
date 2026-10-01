@@ -65,15 +65,6 @@ abstract class BaseBottomSheetDialogFragment<VB : ViewBinding> : BottomSheetDial
     /** 初始化 View。 */
     abstract fun initView(savedInstanceState: Bundle?)
 
-    /**
-     * 获取弹窗主题样式。
-     *
-     * @return 样式资源ID
-     */
-    protected open fun getTheme(): Int {
-        return com.google.android.material.R.style.Theme_MaterialComponents_BottomSheetDialog
-    }
-
     /** 设置底部弹窗属性。 */
     protected open fun setupBottomSheet() {
         dialog?.setOnShowListener { dialog ->

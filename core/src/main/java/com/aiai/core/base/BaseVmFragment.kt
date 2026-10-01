@@ -8,9 +8,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseVmFragment<VB : ViewBinding> : BaseFragment<VB>() {
+abstract class BaseVmFragment<VB : ViewBinding, VM : ViewModel> : BaseFragment<VB>() {
 
-    protected lateinit var viewModel: ViewModel
+    protected lateinit var viewModel: VM
         private set
 
     override fun onCreateView(
@@ -22,5 +22,5 @@ abstract class BaseVmFragment<VB : ViewBinding> : BaseFragment<VB>() {
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 
-    abstract fun getViewModelClass(): Class<out ViewModel>
+    abstract fun getViewModelClass(): Class<VM>
 }

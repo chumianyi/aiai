@@ -27,39 +27,39 @@ object AppConfig {
     // region API 配置
     var apiBaseUrl: String
         get() = MMKVManager.getString(Constants.KEY_API_BASE_URL, "https://api.example.com/v1")
-        set(value) = MMKVManager.putString(Constants.KEY_API_BASE_URL, value)
+        set(value) { MMKVManager.putString(Constants.KEY_API_BASE_URL, value) }
 
     var apiKey: String
         get() = MMKVManager.getString(Constants.KEY_API_KEY, "")
-        set(value) = MMKVManager.putString(Constants.KEY_API_KEY, value)
+        set(value) { MMKVManager.putString(Constants.KEY_API_KEY, value) }
 
     var modelName: String
         get() = MMKVManager.getString(Constants.KEY_MODEL_NAME, "gpt-4o")
-        set(value) = MMKVManager.putString(Constants.KEY_MODEL_NAME, value)
+        set(value) { MMKVManager.putString(Constants.KEY_MODEL_NAME, value) }
     // endregion
 
     // region 用户配置
     var userId: String
         get() = MMKVManager.getString("user_id", "")
-        set(value) = MMKVManager.putString("user_id", value)
+        set(value) { MMKVManager.putString("user_id", value) }
 
     var token: String
         get() = MMKVManager.getString("token", "")
-        set(value) = MMKVManager.putString("token", value)
+        set(value) { MMKVManager.putString("token", value) }
 
     var isLoggedIn: Boolean
         get() = MMKVManager.getBoolean("is_logged_in", false)
-        set(value) = MMKVManager.putBoolean("is_logged_in", value)
+        set(value) { MMKVManager.putBoolean("is_logged_in", value) }
     // endregion
 
     // region 主题
     var themeMode: Int
         get() = MMKVManager.getInt("theme_mode", 0) // 0=跟随系统
-        set(value) = MMKVManager.putInt("theme_mode", value)
+        set(value) { MMKVManager.putInt("theme_mode", value) }
 
     var languageMode: Int
         get() = MMKVManager.getInt("language_mode", 0) // 0=跟随系统
-        set(value) = MMKVManager.putInt("language_mode", value)
+        set(value) { MMKVManager.putInt("language_mode", value) }
     // endregion
 
     // region 调试
