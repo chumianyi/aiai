@@ -603,7 +603,6 @@
     <string name="bubble_style_shadow">阴影气泡</string>
 
     <!-- ========== 认证相关 ========== -->
-    <string name="login">登录</string>
     <string name="logout">登出</string>
     <string name="register">注册</string>
     <string name="username">用户名</string>
