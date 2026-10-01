@@ -354,7 +354,7 @@
     <string name="about_third_party">Third-Party Libraries</string>
     <string name="about_update_check">Check for Updates</string>
     <string name="about_disclaimer">Disclaimer</string>
-    <string name="about_disclaimer_content">This app is for educational purposes only. AI-generated content does not represent the developer's views.</string>
+    <string name="about_disclaimer_content">This app is for educational purposes only. AI-generated content does not represent the developer\'s views.</string>
 
     <!-- ========== License Names ========== -->
     <string name="license_androidx">AndroidX</string>
@@ -505,7 +505,7 @@
 
     <!-- ========== Storage ========== -->
     <string name="storage_cache_size">Cache size</string>
-    <string name="storage_clear_cache_confirm">Clear all cache? This won't delete chat history.</string>
+    <string name="storage_clear_cache_confirm">Clear all cache? This won\'t delete chat history.</string>
     <string name="storage_cache_cleared">Cache cleared</string>
     <string name="storage_database_size">Database size</string>
     <string name="storage_images_size">Image cache</string>
@@ -545,7 +545,7 @@
     <string name="update_installing">Installing update...</string>
     <string name="update_install_now">Install Now</string>
     <string name="update_later">Remind Later</string>
-    <string name="update_whats_new">What's New</string>
+    <string name="update_whats_new">What\'s New</string>
     <string name="update_size">Download size</string>
 
     <!-- ========== Widget ========== -->
