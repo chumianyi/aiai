@@ -32,6 +32,7 @@ dependencies {
     api(libs.okhttp)
     api(libs.okhttp.logging)
     kapt(libs.hilt.compiler)
+    kapt(libs.hilt.android)
     api(libs.navigation.fragment)
     api(libs.navigation.ui)
     api(libs.lifecycle.viewmodel)
