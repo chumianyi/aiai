@@ -43,6 +43,13 @@ android {
     }
 }
 
+
+    configurations {
+        all {
+            exclude(group = "org.jetbrains", module = "annotations-java5")
+        }
+    }
+
 dependencies {
     implementation(project(":core"))
     implementation(project(":common"))
