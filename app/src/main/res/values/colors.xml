@@ -18,7 +18,7 @@
     <!-- ========== 第三色板 (Tertiary) ========== -->
     <color name="tertiary">#7D5260</color>
     <color name="on_tertiary">#FFFFFF</color>
-    <color name="tertiary_container=">#FFD8E4</color>
+    <color name="tertiary_container">#FFD8E4</color>
     <color name="on_tertiary_container">#31111D</color>
 
     <!-- ========== 背景/表面 ========== -->
