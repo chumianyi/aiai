@@ -25,7 +25,7 @@ import dagger.hilt.android.components.ApplicationComponent
  * 实际 Repository 接口和实现在 data 模块中绑定。
  */
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(dagger.hilt.android.components.ApplicationComponent::class)
 abstract class RepositoryModule {
     // 实际绑定在 data 模块的 RepositoryModuleImpl 中完成
 }

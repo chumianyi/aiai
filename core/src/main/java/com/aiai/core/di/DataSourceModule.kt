@@ -25,7 +25,7 @@ import dagger.hilt.android.components.ApplicationComponent
  * 实际 DataSource 在 data/network 模块中绑定。
  */
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(dagger.hilt.android.components.ApplicationComponent::class)
 abstract class DataSourceModule {
     // 实际绑定在 data 模块中完成
 }

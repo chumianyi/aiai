@@ -38,7 +38,7 @@ import javax.inject.Singleton
  * 提供 Application、Context、Gson、OkHttp、CoroutineDispatcher 等基础依赖。
  */
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(dagger.hilt.android.components.ApplicationComponent::class)
 object CoreModule {
 
     @Provides
