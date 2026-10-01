@@ -13,13 +13,13 @@
     </style>
 
     <!-- 页面工具栏标题样式 -->
-    <style name="SettingsToolbar" parent="Widget.Material3.Toolbar">
+    <style name="SettingsToolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">@color/bg_card</item>
         <item name="android:elevation">0.5dp</item>
         <item name="titleTextAppearance">@style/SettingsToolbarTitle</item>
     </style>
 
-    <style name="SettingsToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+    <style name="SettingsToolbarTitle" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textSize">@dimen/text_title</item>
         <item name="android:textStyle">bold</item>
@@ -50,7 +50,7 @@
     </style>
 
     <!-- 卡片容器 -->
-    <style name="SettingCard" parent="Widget.Material3.CardView.Elevated">
+    <style name="SettingCard" parent="android:Widget">
         <item name="cardBackgroundColor">@color/bg_card</item>
         <item name="cardCornerRadius">@dimen/corner_radius</item>
         <item name="cardElevation">@dimen/elevation_card</item>
@@ -58,14 +58,14 @@
     </style>
 
     <!-- 主按钮 -->
-    <style name="PrimaryButton" parent="Widget.Material3.Button">
+    <style name="PrimaryButton" parent="Widget.AppCompat.Button">
         <item name="backgroundTint">@color/primary</item>
         <item name="android:textColor">@color/text_on_primary</item>
         <item name="cornerRadius">@dimen/corner_radius_small</item>
     </style>
 
     <!-- 次级按钮 -->
-    <style name="SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+    <style name="SecondaryButton" parent="Widget.AppCompat.Button">
         <item name="cornerRadius">@dimen/corner_radius_small</item>
     </style>
 
