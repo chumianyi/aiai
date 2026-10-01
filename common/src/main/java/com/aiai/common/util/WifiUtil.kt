@@ -56,7 +56,8 @@ object WifiUtil {
      */
     fun enableWifi(context: Context): Boolean {
         val wifiManager = getWifiManager(context)
-        return if ((wifiManager.isWifiEnabled as? Boolean) == false) {
+        val wasDisabled = runCatching { !(wifiManager.javaClass.getMethod("isWifiEnabled").invoke(wifiManager) as Boolean) }.getOrDefault(true)
+        return if (wasDisabled) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 // Android Q+ 无法直接开启，需引导用户到设置页
                 false
@@ -77,7 +78,8 @@ object WifiUtil {
      */
     fun disableWifi(context: Context): Boolean {
         val wifiManager = getWifiManager(context)
-        return if ((wifiManager.isWifiEnabled as? Boolean) == true) {
+        val wasEnabled = runCatching { wifiManager.javaClass.getMethod("isWifiEnabled").invoke(wifiManager) as Boolean }.getOrDefault(true)
+        return if (wasEnabled) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 false
             } else {

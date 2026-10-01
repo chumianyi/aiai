@@ -161,7 +161,7 @@ object NfcUtil {
             val messages = try {
                 ndef.javaClass.getMethod("getCachedNdefMessages").invoke(ndef) as? Array<*> ?: emptyArray<Any?>()
             } catch (e: Exception) { emptyArray<Any?>() }
-            callback.onNdefMessageRead(messages.toList())
+            callback.onNdefMessageRead(messages.toList() as List<android.nfc.NdefMessage>)
             ndef.close()
         } catch (e: Exception) {
             Log.e(TAG, "Read NDEF failed", e)
