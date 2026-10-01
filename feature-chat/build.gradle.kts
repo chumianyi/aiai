@@ -45,7 +45,6 @@ dependencies {
     api(libs.glide.okhttp)
     api(libs.markwon.core)
     api(libs.markwon.html)
-    api(libs.markwon.code)
     api(libs.markwon.syntax.highlight)
     api(libs.markwon.linkify)
     api(libs.markwon.ext.tables)
