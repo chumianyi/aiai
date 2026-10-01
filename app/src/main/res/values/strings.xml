@@ -603,8 +603,6 @@
     <string name="bubble_style_shadow">阴影气泡</string>
 
     <!-- ========== 认证相关 ========== -->
-    <string name="logout">登出</string>
-    <string name="register">注册</string>
     <string name="username">用户名</string>
     <string name="password">密码</string>
     <string name="confirm_password">确认密码</string>
@@ -660,13 +658,8 @@
     <string name="feedback_title">反馈标题</string>
     <string name="feedback_content">反馈内容</string>
     <string name="feedback_type">反馈类型</string>
-    <string name="feedback_type_feature">功能建议</string>
-    <string name="feedback_type_bug">Bug报告</string>
     <string name="feedback_type_consult">使用咨询</string>
-    <string name="feedback_type_other">其他</string>
-    <string name="feedback_submit">提交反馈</string>
     <string name="feedback_success">反馈提交成功</string>
-    <string name="feedback_list">反馈列表</string>
     <string name="feedback_detail">反馈详情</string>
     <string name="feedback_reply">回复</string>
     <string name="feedback_status_pending">待处理</string>
@@ -681,7 +674,6 @@
     <string name="new_version_available">发现新版本</string>
     <string name="latest_version">已是最新版本</string>
     <string name="update_now">立即更新</string>
-    <string name="update_later">稍后再说</string>
     <string name="update_log">更新日志</string>
     <string name="downloading">下载中</string>
     <string name="download_progress">下载进度：%1$d%%</string>
@@ -707,19 +699,10 @@
 
     <!-- ========== 设置相关扩展 ========== -->
     <string name="settings_account">账号设置</string>
-    <string name="settings_privacy">隐私设置</string>
-    <string name="settings_notification">通知设置</string>
     <string name="settings_storage">存储设置</string>
-    <string name="settings_about">关于我们</string>
-    <string name="settings_help">帮助中心</string>
-    <string name="settings_feedback">意见反馈</string>
-    <string name="settings_terms">用户协议</string>
-    <string name="settings_privacy_policy">隐私政策</string>
-    <string name="settings_clear_cache">清除缓存</string>
     <string name="settings_clear_history">清除历史记录</string>
     <string name="settings_auto_save">自动保存</string>
     <string name="settings_cloud_sync">云端同步</string>
-    <string name="settings_backup">数据备份</string>
     <string name="settings_restore">数据恢复</string>
     <string name="settings_export">导出数据</string>
     <string name="settings_import">导入数据</string>
@@ -727,11 +710,9 @@
     <!-- ========== 聊天相关扩展 ========== -->
     <string name="chat_send">发送</string>
     <string name="chat_input_hint">输入消息...</string>
-    <string name="chat_thinking">思考中...</string>
     <string name="chat_typing">正在输入...</string>
     <string name="chat_copy">复制</string>
     <string name="chat_retry">重试</string>
-    <string name="chat_regenerate">重新生成</string>
     <string name="chat_stop">停止生成</string>
     <string name="chat_new_session">新建对话</string>
     <string name="chat_clear_session">清空对话</string>
@@ -746,33 +727,18 @@
     <string name="chat_no_more">没有更多了</string>
 
     <!-- ========== 错误提示 ========== -->
-    <string name="error_network">网络连接失败，请检查网络设置</string>
-    <string name="error_server">服务器错误，请稍后重试</string>
     <string name="error_timeout">请求超时，请稍后重试</string>
-    <string name="error_unknown">未知错误</string>
-    <string name="error_permission_denied">权限被拒绝</string>
     <string name="error_storage">存储空间不足</string>
-    <string name="error_file_not_found">文件不存在</string>
-    <string name="error_file_too_large">文件过大</string>
     <string name="error_invalid_format">格式不正确</string>
     <string name="error_too_many_requests">请求过于频繁，请稍后再试</string>
     <string name="error_token_expired">登录已过期，请重新登录</string>
     <string name="error_vip_required">此功能需要VIP会员</string>
-    <string name="error_quota_exceeded">使用次数已达上限</string>
 
     <!-- ========== 成功提示 ========== -->
-    <string name="success_save">保存成功</string>
-    <string name="success_delete">删除成功</string>
-    <string name="success_copy">复制成功</string>
-    <string name="success_upload">上传成功</string>
-    <string name="success_download">下载成功</string>
-    <string name="success_send">发送成功</string>
-    <string name="success_update">更新成功</string>
     <string name="success_backup">备份成功</string>
     <string name="success_restore">恢复成功</string>
 
     <!-- ========== 确认对话框 ========== -->
-    <string name="confirm_delete">确认删除？</string>
     <string name="confirm_clear">确认清空？</string>
     <string name="confirm_logout">确认退出登录？</string>
     <string name="confirm_cancel_order">确认取消订单？</string>
@@ -780,16 +746,10 @@
     <string name="confirm_reset">确认重置？</string>
 
     <!-- ========== 其他 ========== -->
-    <string name="loading">加载中...</string>
-    <string name="retry">重试</string>
-    <string name="refresh">刷新</string>
-    <string name="load_more">加载更多</string>
     <string name="no_data">暂无数据</string>
     <string name="empty_view">空空如也</string>
-    <string name="network_error">网络错误</string>
     <string name="server_error">服务器错误</string>
     <string name="unknown_error">未知错误</string>
-    <string name="search">搜索</string>
     <string name="filter">筛选</string>
     <string name="sort">排序</string>
     <string name="all">全部</string>
