@@ -303,7 +303,7 @@ fun TextView.isBlank(): Boolean = text?.isBlank() ?: true
 /**
  * 获取文本长度。
  */
-funTextViewLength(): Int = text?.length ?: 0
+fun TextView.textLength(): Int = text?.length ?: 0
 
 /**
  * 清空文本。

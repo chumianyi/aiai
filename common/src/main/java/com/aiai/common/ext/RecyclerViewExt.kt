@@ -276,7 +276,7 @@ fun RecyclerView.resetLoadMore() {
  */
 fun RecyclerView.addVerticalDivider(drawableRes: Int? = null) {
     val decoration = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-    drawableRes?.let { decoration.setDrawable(context.getDrawable(it)) }
+    drawableRes?.let { decoration.setDrawable(context.getDrawable(it)!!) }
     addItemDecoration(decoration)
 }
 
@@ -287,7 +287,7 @@ fun RecyclerView.addVerticalDivider(drawableRes: Int? = null) {
  */
 fun RecyclerView.addHorizontalDivider(drawableRes: Int? = null) {
     val decoration = DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL)
-    drawableRes?.let { decoration.setDrawable(context.getDrawable(it)) }
+    drawableRes?.let { decoration.setDrawable(context.getDrawable(it)!!) }
     addItemDecoration(decoration)
 }
 
@@ -465,8 +465,8 @@ fun RecyclerView.attachSnapHelper(snapHelper: SnapHelper = LinearSnapHelper()) {
  */
 fun RecyclerView.setEdgeEffectColor(color: Int) {
     edgeEffectFactory = object : EdgeEffectFactory() {
-        override fun createEdgeEffect(view: RecyclerView, direction: Int): EdgeEffectCompat {
-            return EdgeEffectCompat(view.context).apply {
+        override fun createEdgeEffect(view: RecyclerView, direction: Int): androidx.recyclerview.widget.EdgeEffect {
+            return androidx.recyclerview.widget.EdgeEffect(view.context).apply {
                 setColor(color)
             }
         }

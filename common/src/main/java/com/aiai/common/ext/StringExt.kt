@@ -43,7 +43,7 @@ fun String?.isBlank(): Boolean = this == null || this.isBlank()
 
 /** 非空安全执行 [block]。 */
 inline fun String?.ifNotNullEmpty(block: (String) -> Unit) {
-    if (!this.isNullOrEmpty()) block(this)
+    if (!this.isNullOrEmpty()) block(this ?: return)
 }
 
 /** 非空白安全执行 [block]。 */
@@ -198,8 +198,8 @@ fun String.pinyinFirstLetter(): String {
     if (isEmpty()) return "#"
     val c = this[0]
     return when (c) {
-        in 'A'..'Z' -> c.uppercaseChar()
-        in 'a'..'z' -> c.uppercaseChar()
+        in 'A'..'Z' -> c.uppercaseChar().toString()
+        in 'a'..'z' -> c.uppercaseChar().toString()
         else -> {
             // 简化处理：非首字符直接返回 #
             if (c in '\u4e00'..'\u9fa5') "#" else "#"

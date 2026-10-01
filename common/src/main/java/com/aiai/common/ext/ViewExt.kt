@@ -383,13 +383,6 @@ private fun View.setImageBitmapCompat(bitmap: Bitmap) {
 }
 
 /**
- * 遍历所有子 View 执行 [block]。
- */
-fun ViewGroup.forEachChild(action: (View) -> Unit) {
-    for (i in 0 until childCount) action(getChildAt(i))
-}
-
-/**
  * 递归遍历所有后代 View 执行 [block]。
  */
 fun ViewGroup.forEachDescendant(action: (View) -> Unit) {
