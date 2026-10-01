@@ -17,7 +17,7 @@ package com.aiai.core.di
 
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.components.SingletonComponent
 
 /**
  * Network 模块（占位引用）。
@@ -25,7 +25,7 @@ import dagger.hilt.android.components.ApplicationComponent
  * 实际网络模块的依赖配置在 :network 模块中。
  */
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 abstract class NetworkModule {
     // 实际网络配置在 network 模块中
 }
