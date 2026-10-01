@@ -90,6 +90,7 @@
     <color name="secondary_dark">#CCC2DC</color>
     <color name="on_secondary_dark">#332D41</color>
     <color name="secondary_container_dark">#4A4458</color>
+    <color name="on_secondary_container_dark">#E8DEF8</color>
     <color name="tertiary_dark">#EFB8C8</color>
     <color name="on_tertiary_dark">#492532</color>
     <color name="background_dark">#141218</color>

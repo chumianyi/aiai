@@ -97,7 +97,6 @@
     <!-- ========== 底部弹窗主题 ========== -->
     <style name="Theme.AiAi.BottomSheetDialog" parent="Theme.Material3.DayNight.BottomSheetDialog">
         <item name="colorSurface">@color/surface</item>
-        <item name="shapeAppearanceMedium">@style/ShapeAppearance.AiAi.BottomSheet</item>
     </style>
 
     <!-- ========== 形状 ========== -->

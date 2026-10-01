@@ -230,7 +230,6 @@
     <style name="TextAppearance.AiAi.ButtonText" parent="TextAppearance.Material3.LabelLarge">
         <item name="android:textSize">@dimen/text_md</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:allCaps">false</item>
     </style>
 
     <!-- ========== 额外按钮样式 ========== -->
