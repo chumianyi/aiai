@@ -15,6 +15,13 @@ android {
 dependencies {
     api(libs.androidx.core.ktx)
     api(libs.androidx.appcompat)
+    api(libs.material)
+    api(libs.androidx.recyclerview)
+    api(libs.androidx.fragment.ktx)
+    api(libs.androidx.swiperefreshlayout)
+    api(libs.lifecycle.viewmodel)
+    api(libs.lifecycle.livedata)
+    api(libs.lifecycle.runtime)
     api(libs.kotlin.stdlib)
     api(libs.kotlinx.coroutines.core)
     api(libs.kotlinx.coroutines.android)

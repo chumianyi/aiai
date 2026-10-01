@@ -63,7 +63,9 @@ fun <T> Flow<T>.retryExponential(
 }
 
 /** 超时：超过 [timeMillis] 未发射则抛出异常。 */
-fun <T> Flow<T>.timeoutMillis(timeMillis: Long): Flow<T> = timeout(timeMillis)
+fun <T> Flow<T>.timeoutMillis(timeMillis: Long): Flow<T> = flow {
+    kotlinx.coroutines.withTimeout(timeMillis) { collect { emit(it) } }
+}
 
 /** 错误恢复：捕获异常并返回 [fallback]。 */
 fun <T> Flow<T>.onErrorReturn(fallback: T): Flow<T> = catch { emit(fallback) }

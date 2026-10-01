@@ -196,10 +196,6 @@ fun Context.getAppUpdateTime(packageName: String = this.packageName): Long {
  * @param permission 权限名称
  * @return true 表示已授予
  */
-fun Context.hasPermission(permission: String): Boolean {
-    return checkSelfPermission(permission) == android.content.pm.PackageManager.PERMISSION_GRANTED
-}
-
 /**
  * 检查多个权限是否全部授予。
  *

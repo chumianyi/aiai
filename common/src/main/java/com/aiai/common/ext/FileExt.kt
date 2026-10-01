@@ -115,7 +115,7 @@ fun File.readableSize(): String {
     val size = length()
     if (size <= 0) return "0 B"
     val units = arrayOf("B", "KB", "MB", "GB", "TB")
-    var digit = 0.0
+    var digit = 0
     var s = size.toDouble()
     while (s >= 1024 && digit < units.size - 1) {
         s /= 1024

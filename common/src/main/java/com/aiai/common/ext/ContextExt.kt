@@ -67,12 +67,6 @@ val Float.pxToSp: Float
 /** dp 转 Int px。 */
 fun dp2px(dp: Float): Int = dp.dp.toInt()
 
-/** sp 转 Int px。 */
-fun sp2px(sp: Float): Int = sp.sp.toInt()
-
-/** px 转 Int dp。 */
-fun px2dp(px: Float): Int = px.pxToDp.toInt()
-
 // endregion
 
 // region 资源获取
