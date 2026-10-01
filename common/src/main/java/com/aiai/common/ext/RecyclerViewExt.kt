@@ -459,21 +459,6 @@ fun RecyclerView.attachSnapHelper(snapHelper: SnapHelper = LinearSnapHelper()) {
 }
 
 /**
- * 设置边缘效果颜色。
- *
- * @param color 边缘颜色
- */
-fun RecyclerView.setEdgeEffectColor(color: Int) {
-    edgeEffectFactory = object : EdgeEffectFactory() {
-        override fun createEdgeEffect(view: RecyclerView, direction: Int): androidx.recyclerview.widget.EdgeEffect {
-            return androidx.recyclerview.widget.EdgeEffect(view.context).apply {
-                setColor(color)
-            }
-        }
-    }
-}
-
-/**
  * 是否可以垂直滚动。
  */
 fun RecyclerView.canScrollVertically(): Boolean {

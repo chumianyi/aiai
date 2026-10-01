@@ -26,6 +26,7 @@ dependencies {
     api(libs.kotlinx.coroutines.core)
     api(libs.kotlinx.coroutines.android)
     api(libs.mmkv)
+    api("com.github.bumptech.glide:glide:4.16.0")
     api(libs.gson)
     api(libs.datastore.preferences)
     api("androidx.biometric:biometric:1.1.0")

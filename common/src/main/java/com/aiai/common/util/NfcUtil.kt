@@ -158,7 +158,7 @@ object NfcUtil {
 
         try {
             ndef.connect()
-            val messages = ndef.ndefMessages
+            val messages = ndef.cachedNdefMessages
             callback.onNdefMessageRead(messages.toList())
             ndef.close()
         } catch (e: Exception) {

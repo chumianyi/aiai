@@ -17,6 +17,7 @@ package com.aiai.common.util
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
+import android.view.View
 import android.appwidget.AppWidgetProvider
 import android.content.ComponentName
 import android.content.Context

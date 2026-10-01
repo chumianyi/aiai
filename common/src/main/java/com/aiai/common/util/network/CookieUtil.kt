@@ -24,9 +24,7 @@ import java.net.HttpCookie
  */
 object CookieUtil {
 
-    private val cookieStore: CookieStore = CookieManager.getDefaultPolicy().let {
-        java.net.CookieManager().cookieStore
-    }
+    private val cookieStore: CookieStore = java.net.CookieManager().cookieStore
 
     /** 添加 Cookie。 */
     fun add(uri: String, cookie: HttpCookie) {

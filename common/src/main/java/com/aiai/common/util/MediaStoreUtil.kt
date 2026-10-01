@@ -155,7 +155,7 @@ object MediaStoreUtil {
         val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values)
 
         uri?.let {
-            resolver.openOutputStream(it).use { outputStream ->
+            resolver.openOutputStream(it)?.use { outputStream ->
                 bitmap.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, outputStream)
             }
 

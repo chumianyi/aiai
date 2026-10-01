@@ -16,6 +16,7 @@
 package com.aiai.common.util
 
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.telephony.PhoneStateListener
 import android.telephony.SignalStrength
@@ -164,7 +165,7 @@ object TelephonyUtil {
      */
     fun isMobileNetwork(context: Context): Boolean {
         val telephonyManager = getTelephonyManager(context)
-        return telephonyManager.dataType != TelephonyManager.NETWORK_TYPE_UNKNOWN
+        return telephonyManager.networkType != TelephonyManager.NETWORK_TYPE_UNKNOWN
     }
 
     /**

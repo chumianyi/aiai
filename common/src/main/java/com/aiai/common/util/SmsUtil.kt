@@ -51,7 +51,7 @@ object SmsUtil {
     @Suppress("MissingPermission")
     fun sendSms(context: Context, phoneNumber: String, message: String): Boolean {
         return try {
-            val smsManager = context.getSystemService(Context.SMS_SERVICE) as SmsManager
+            val smsManager = context.getSystemService("sms") as SmsManager
             val parts = smsManager.divideMessage(message)
             smsManager.sendMultipartTextMessage(phoneNumber, null, parts, null, null)
             Log.d(TAG, "SMS sent to $phoneNumber")

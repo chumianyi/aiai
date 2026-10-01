@@ -48,7 +48,7 @@ inline fun ViewGroup.forEachChild(action: (View) -> Unit) {
  *
  * @param action 对每个子 View 执行的操作
  */
-inline fun ViewGroup.forEachChildRecursive(action: (View) -> Unit) {
+fun ViewGroup.forEachChildRecursive(action: (View) -> Unit) {
     forEachChild { child ->
         action(child)
         if (child is ViewGroup) {
@@ -63,7 +63,7 @@ inline fun ViewGroup.forEachChildRecursive(action: (View) -> Unit) {
  * @param predicate 筛选条件
  * @return 符合条件的 View 列表
  */
-inline fun ViewGroup.findChildren(crossinline predicate: (View) -> Boolean): List<View> {
+fun ViewGroup.findChildren(crossinline predicate: (View) -> Boolean): List<View> {
     val result = mutableListOf<View>()
     forEachChild { child ->
         if (predicate(child)) {
@@ -82,7 +82,7 @@ inline fun ViewGroup.findChildren(crossinline predicate: (View) -> Boolean): Lis
  * @param predicate 筛选条件
  * @return 符合条件的 View，未找到返回 null
  */
-inline fun ViewGroup.findChild(crossinline predicate: (View) -> Boolean): View? {
+fun ViewGroup.findChild(crossinline predicate: (View) -> Boolean): View? {
     forEachChild { child ->
         if (predicate(child)) {
             return child
