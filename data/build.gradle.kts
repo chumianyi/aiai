@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
-    alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
 }
 
@@ -22,7 +21,7 @@ dependencies {
     api(libs.room.runtime)
     api(libs.room.ktx)
     api(libs.room.paging)
-    ksp(libs.room.compiler)
+    kapt(libs.room.compiler)
     api(libs.paging.runtime)
     api(libs.paging.common)
     api(libs.kotlinx.coroutines.core)
