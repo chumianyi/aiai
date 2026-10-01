@@ -25,7 +25,7 @@ import android.util.LruCache
  */
 object BitmapPool {
 
-    private const val MAX_MEMORY = Runtime.getRuntime().maxMemory().toInt() / 8
+    private val MAX_MEMORY = Runtime.getRuntime().maxMemory().toInt() / 8
     private val cache: LruCache<String, Bitmap> = object : LruCache<String, Bitmap>(MAX_MEMORY) {
         override fun sizeOf(key: String, value: Bitmap): Int {
             return value.byteCount

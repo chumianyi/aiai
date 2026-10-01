@@ -79,7 +79,7 @@ fun Context.isEthernet(): Boolean {
     val cm = getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager ?: return false
     val network = cm.activeNetwork ?: return false
     val caps = cm.getNetworkCapabilities(network) ?: return false
-    caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
+    return caps.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
 }
 
 // endregion

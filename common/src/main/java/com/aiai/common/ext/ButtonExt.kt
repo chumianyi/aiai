@@ -178,7 +178,7 @@ fun Button.setPrimaryStyle(
 ) {
     background = GradientDrawable().apply {
         setColor(backgroundColor)
-        cornerRadius = cornerRadius
+        setCornerRadius(cornerRadius)
     }
     setTextColor(textColor)
 }
@@ -199,7 +199,7 @@ fun Button.setOutlineStyle(
 ) {
     background = GradientDrawable().apply {
         setStroke(borderWidth.toInt(), borderColor)
-        cornerRadius = cornerRadius
+        setCornerRadius(cornerRadius)
     }
     setTextColor(textColor)
 }

@@ -335,7 +335,7 @@ private data class PermissionCallback(
  * 获取当前任务栈中的所有 Activity（弱引用列表）。
  */
 fun Context.getActivityStack(): List<Activity> {
-    return ActivityStackHolder.stack.filter { !it.isFinite() }
+    return ActivityStackHolder.stack.filter { !it.isFinishing }
 }
 
 /**

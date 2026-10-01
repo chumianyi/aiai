@@ -391,13 +391,6 @@ fun Activity.setFullScreen() {
 }
 
 /**
- * 退出全屏。
- */
-fun Activity.exitFullScreen() {
-    window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
-}
-
-/**
  * 设置屏幕方向为竖屏。
  */
 fun Activity.setPortrait() {

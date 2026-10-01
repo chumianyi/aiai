@@ -36,20 +36,6 @@ import androidx.core.content.ContextCompat
 // region 像素转换
 
 /**
- * dp 转 px。
- *
- * @param dp dp 值
- * @return px 值
- */
-fun dp2px(dp: Float): Float {
-    return TypedValue.applyDimension(
-        TypedValue.COMPLEX_UNIT_DIP,
-        dp,
-        Resources.getSystem().displayMetrics
-    )
-}
-
-/**
  * dp 转 px（Int）。
  *
  * @param dp dp 值
