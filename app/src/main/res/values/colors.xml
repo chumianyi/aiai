@@ -104,7 +104,7 @@
     <color name="outline_dark">#938F99</color>
     <color name="outline_variant_dark">#49454F</color>
     <color name="text_primary_dark">#E6E0E9</color>
-    <color name="text_secondary_dark=">#CAC4D0</color>
+    <color name="text_secondary_dark">#CAC4D0</color>
     <color name="text_tertiary_dark">#938F99</color>
     <color name="bg_page_dark">#141218</color>
     <color name="bg_card_dark">#1D1B20</color>
