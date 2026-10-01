@@ -178,8 +178,6 @@
 
     <!-- ========== 滑块 ========== -->
     <style name="Widget.AiAi.Slider" parent="Widget.Material3.Slider">
-        <item name="activeTickColor">@color/slider_active</item>
-        <item name="inactiveTrackColor">@color/slider_inactive</item>
     </style>
 
     <!-- ========== 徽章 ========== -->
@@ -252,8 +250,6 @@
     <style name="Widget.AiAi.CardView.Chat" parent="Widget.Material3.CardView.Elevated">
         <item name="cardElevation">@dimen/elevation_xs</item>
         <item name="cardCornerRadius">@dimen/bubble_radius</item>
-        <item name="contentPaddingHorizontal">@dimen/bubble_padding_h</item>
-        <item name="contentPaddingVertical">@dimen/bubble_padding_v</item>
     </style>
 
     <style name="Widget.AiAi.CardView.Settings" parent="Widget.Material3.CardView.Outlined">
@@ -316,8 +312,6 @@
 
     <!-- ========== 下拉刷新 ========== -->
     <style name="Widget.AiAi.SwipeRefresh" parent="">
-        <item name="setProgressBackgroundColorScheme">@color/surface</item>
-        <item name="setColorSchemeResources">@color/primary</item>
     </style>
 
     <!-- ========== RecyclerView ========== -->
@@ -345,7 +339,7 @@
     </style>
 
     <!-- ========== 快捷设置 ========== -->
-    <style name="Widget.AiAi.Preference" parent="PreferenceScreen">
+    <style name="Widget.AiAi.Preference" parent="@android:style/PreferenceStyle">
         <item name="android:iconSpaceReserved">true</item>
     </style>
 
