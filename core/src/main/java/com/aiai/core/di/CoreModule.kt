@@ -23,7 +23,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityRetainedComponent
-import dagger.hilt.android.components.SingletonComponent
+import dagger.hilt.android.components.ApplicationComponent
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import okhttp3.OkHttpClient
@@ -38,7 +38,7 @@ import javax.inject.Singleton
  * 提供 Application、Context、Gson、OkHttp、CoroutineDispatcher 等基础依赖。
  */
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(ApplicationComponent::class)
 object CoreModule {
 
     @Provides
