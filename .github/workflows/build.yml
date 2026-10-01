@@ -1,0 +1,28 @@
+name: Build APK
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Generate debug keystore
+        run: |
+          mkdir -p $HOME/.android
+          keytool -genkeypair -v -keystore $HOME/.android/debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+      - name: Sign release build with debug key
+        run: |
+          sed -i 's/isMinifyEnabled = true/isMinifyEnabled = true\n            signingConfig = signingConfigs.getByName("debug")/' app/build.gradle.kts
+      - name: Build Release APK
+        run: chmod +x gradlew && ./gradlew :app:assembleRelease --no-daemon --console=plain --stacktrace
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aiai-apk
+          path: app/build/outputs/apk/release/*.apk

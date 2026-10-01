@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 基础间距 ============ -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+
+    <!-- ============ 控件尺寸 ============ -->
+    <dimen name="item_height">56dp</dimen>
+    <dimen name="item_height_large">64dp</dimen>
+    <dimen name="item_height_small">48dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_bg_size">40dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+    <dimen name="corner_radius_small">8dp</dimen>
+    <dimen name="corner_radius_large">16dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="elevation_card">2dp</dimen>
+
+    <!-- ============ 字体大小 ============ -->
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_subhead">16sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_headline">22sp</dimen>
+    <dimen name="text_display">28sp</dimen>
+
+    <!-- ============ 自定义View尺寸 ============ -->
+    <dimen name="progress_ring_stroke">8dp</dimen>
+    <dimen name="search_bar_height">44dp</dimen>
+    <dimen name="tag_height">28dp</dimen>
+    <dimen name="color_cell_size">40dp</dimen>
+    <dimen name="tab_height">40dp</dimen>
+    <dimen name="bubble_preview_height">120dp</dimen>
+
+</resources>

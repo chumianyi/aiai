@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<com.aiai.chat.ui.view.RoundedCornerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cornerRadius="16dp">
+
+    <TextView
+        android:id="@+id/tv_bubble_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_primary" />
+
+</com.aiai.chat.ui.view.RoundedCornerLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp">
+
+    <com.aiai.chat.ui.view.MarkdownTextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_bubble_ai"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="3dp"
+        android:maxWidth="280dp" />
+
+    <com.aiai.chat.ui.view.MessageStatusView
+        android:id="@+id/view_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp" />
+
+</LinearLayout>

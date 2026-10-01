@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 外观设置 Fragment -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.aiai.settings.ui.view.SettingSelectorView
+            android:id="@+id/selectThemeMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectorTitle="@string/appearance_dark_mode" />
+
+        <com.aiai.settings.ui.view.SettingSelectorView
+            android:id="@+id/selectFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectorTitle="@string/appearance_font_size" />
+
+        <com.aiai.settings.ui.view.SettingSelectorView
+            android:id="@+id/selectBubble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectorTitle="@string/appearance_bubble_style" />
+
+        <com.aiai.settings.ui.view.BubbleStylePreview
+            android:id="@+id/bubblePreview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <com.aiai.settings.ui.view.SettingSwitchView
+            android:id="@+id/swAnim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:switchTitle="@string/appearance_animation" />
+
+        <com.aiai.settings.ui.view.ColorPickerView
+            android:id="@+id/colorPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

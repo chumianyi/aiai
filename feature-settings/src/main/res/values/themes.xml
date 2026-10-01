@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 模块内使用的基础主题（实际主题由 app 模块覆盖） -->
+    <style name="Theme.AiAi.Settings" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:windowBackground">@color/bg_window</item>
+        <item name="android:statusBarColor">@color/bg_window</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- 页面工具栏标题样式 -->
+    <style name="SettingsToolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/bg_card</item>
+        <item name="android:elevation">0.5dp</item>
+        <item name="titleTextAppearance">@style/SettingsToolbarTitle</item>
+    </style>
+
+    <style name="SettingsToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 设置项标题 -->
+    <style name="SettingTitle" parent="">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 设置项副标题 -->
+    <style name="SettingSubtitle" parent="">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 分组标题 -->
+    <style name="GroupTitle" parent="">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- 卡片容器 -->
+    <style name="SettingCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/bg_card</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="contentPadding">@dimen/spacing_sm</item>
+    </style>
+
+    <!-- 主按钮 -->
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="cornerRadius">@dimen/corner_radius_small</item>
+    </style>
+
+    <!-- 次级按钮 -->
+    <style name="SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/corner_radius_small</item>
+    </style>
+
+</resources>

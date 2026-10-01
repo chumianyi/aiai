@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_search"
+        android:title="搜索"
+        android:icon="@drawable/ic_search"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_new"
+        android:title="新建"
+        android:icon="@drawable/ic_add"
+        android:showAsAction="ifRoom" />
+</menu>

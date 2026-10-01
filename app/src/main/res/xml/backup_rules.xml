@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="sharedpref" path="aiai_prefs.xml"/>
+    <exclude domain="database" path="aiai_database.db"/>
+    <exclude domain="sharedpref" path="flutter_shared_prefs.xml"/>
+</full-backup-content>

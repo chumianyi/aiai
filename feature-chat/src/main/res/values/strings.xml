@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<resources>
+    <string name="app_name">爱Ai</string>
+    <string name="chat">聊天</string>
+    <string name="discover">发现</string>
+    <string name="profile">我的</string>
+    <string name="new_chat">新建对话</string>
+    <string name="search_hint">搜索...</string>
+    <string name="send">发送</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="share">分享</string>
+    <string name="copy">复制</string>
+    <string name="retry">重试</string>
+    <string name="empty_messages">暂无消息，开始对话吧</string>
+    <string name="empty_conversations">暂无会话</string>
+    <string name="loading">加载中...</string>
+</resources>

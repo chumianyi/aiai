@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========== 应用主主题（浅色） ========== -->
+    <style name="Theme.AiAi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 主色 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+
+        <!-- 次色 -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+
+        <!-- 第三色 -->
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/on_tertiary_container</item>
+
+        <!-- 背景/表面 -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="colorSurfaceContainer">@color/surface_container</item>
+        <item name="colorSurfaceContainerLow">@color/surface_container_low</item>
+        <item name="colorSurfaceContainerHigh">@color/surface_container_high</item>
+
+        <!-- 错误 -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnErrorContainer">@color/on_error_container</item>
+
+        <!-- 轮廓 -->
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+
+        <!-- 窗口属性 -->
+        <item name="android:windowBackground">@color/bg_page</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- 文字外观 -->
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.AiAi.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.AiAi.TitleMedium</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.AiAi.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.AiAi.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.AiAi.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.AiAi.LabelLarge</item>
+
+        <!-- 组件样式 -->
+        <item name="materialButtonStyle">@style/Widget.AiAi.Button</item>
+        <item name="chipStyle">@style/Widget.AiAi.Chip</item>
+        <item name="textInputStyle">@style/Widget.AiAi.TextInputLayout</item>
+        <item name="cardViewStyle">@style/Widget.AiAi.CardView</item>
+        <item name="bottomNavigationStyle">@style/Widget.AiAi.BottomNavigationView</item>
+
+        <!-- 其他 -->
+        <item name="android:windowAnimationStyle">@style/Animation.AiAi</item>
+        <item name="android:divider">@color/divider</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+
+    <!-- ========== 启动页主题 ========== -->
+    <style name="Theme.AiAi.Splash" parent="Theme.AiAi">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- ========== 透明主题（分享页） ========== -->
+    <style name="Theme.AiAi.Transparent" parent="Theme.AiAi">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- ========== 对话框主题 ========== -->
+    <style name="Theme.AiAi.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+    </style>
+
+    <!-- ========== 底部弹窗主题 ========== -->
+    <style name="Theme.AiAi.BottomSheetDialog" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="colorSurface">@color/surface</item>
+        <item name="shapeAppearanceMedium">@style/ShapeAppearance.AiAi.BottomSheet</item>
+    </style>
+
+    <!-- ========== 形状 ========== -->
+    <style name="ShapeAppearance.AiAi.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/bottom_sheet_corner</item>
+        <item name="cornerSizeTopRight">@dimen/bottom_sheet_corner</item>
+    </style>
+
+</resources>

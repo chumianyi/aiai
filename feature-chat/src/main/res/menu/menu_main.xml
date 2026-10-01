@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chat"
+        android:title="聊天"
+        android:icon="@drawable/ic_chat" />
+    <item
+        android:id="@+id/nav_discover"
+        android:title="发现"
+        android:icon="@drawable/ic_discover" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="我的"
+        android:icon="@drawable/ic_profile" />
+</menu>

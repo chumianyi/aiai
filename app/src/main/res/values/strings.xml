@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========== 应用基本信息 ========== -->
+    <string name="app_name">爱Ai</string>
+    <string name="app_name_english">AiAi</string>
+    <string name="app_version">版本 1.0.0</string>
+    <string name="app_version_code">Build 1</string>
+    <string name="app_author">爱Ai团队</string>
+    <string name="app_email">support@aiai.app</string>
+    <string name="app_website">https://aiai.app</string>
+    <string name="app_description">爱Ai - 智能对话助手，随时随地与AI交流</string>
+
+    <!-- ========== 通用按钮 ========== -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="close">关闭</string>
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="previous">上一步</string>
+    <string name="finish">完成</string>
+    <string name="submit">提交</string>
+    <string name="reset">重置</string>
+    <string name="apply">应用</string>
+    <string name="enable">启用</string>
+    <string name="disable">禁用</string>
+    <string name="enable_now">立即启用</string>
+    <string name="disable_now">立即禁用</string>
+    <string name="retry">重试</string>
+    <string name="refresh">刷新</string>
+    <string name="load_more">加载更多</string>
+    <string name="see_more">查看更多</string>
+    <string name="see_less">收起</string>
+    <string name="expand">展开</string>
+    <string name="collapse">折叠</string>
+    <string name="copy">复制</string>
+    <string name="copied">已复制</string>
+    <string name="paste">粘贴</string>
+    <string name="cut">剪切</string>
+    <string name="select_all">全选</string>
+    <string name="share">分享</string>
+    <string name="share_to">分享到</string>
+    <string name="export">导出</string>
+    <string name="import">导入</string>
+    <string name="download">下载</string>
+    <string name="upload">上传</string>
+    <string name="search">搜索</string>
+    <string name="clear">清除</string>
+    <string name="clear_all">全部清除</string>
+    <string name="undo">撤销</string>
+    <string name="redo">重做</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="send">发送</string>
+    <string name="send_message">发送消息</string>
+    <string name="voice_input">语音输入</string>
+    <string name="voice_output">语音播放</string>
+    <string name="attach_image">添加图片</string>
+    <string name="attach_file">添加文件</string>
+    <string name="camera">相机</string>
+    <string name="album">相册</string>
+    <string name="take_photo">拍照</string>
+    <string name="pick_from_gallery">从相册选择</string>
+    <string name="settings">设置</string>
+    <string name="home">首页</string>
+    <string name="menu">菜单</string>
+    <string name="more">更多</string>
+    <string name="less">收起</string>
+    <string name="details">详情</string>
+    <string name="preview">预览</string>
+    <string name="install">安装</string>
+    <string name="uninstall">卸载</string>
+    <string name="update">更新</string>
+    <string name="upgrade">升级</string>
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="register">注册</string>
+
+    <!-- ========== 页面标题 ========== -->
+    <string name="title_chat">对话</string>
+    <string name="title_new_chat">新对话</string>
+    <string name="title_history">历史记录</string>
+    <string name="title_settings">设置</string>
+    <string name="title_about">关于</string>
+    <string name="title_search">搜索</string>
+    <string name="title_prompt_library">提示词库</string>
+    <string name="title_api_config">API配置</string>
+    <string name="title_model_config">模型配置</string>
+    <string name="title_theme">主题设置</string>
+    <string name="title_language">语言设置</string>
+    <string name="title_privacy">隐私政策</string>
+    <string name="title_user_agreement">用户协议</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_help">帮助中心</string>
+    <string name="title_license">开源许可</string>
+    <string name="title_conversation">会话</string>
+    <string name="title_messages">消息</string>
+    <string name="title_favorites">收藏</string>
+    <string name="title_profile">个人中心</string>
+    <string name="title_notification">通知</string>
+    <string name="title_security">安全</string>
+    <string name="title_storage">存储管理</string>
+    <string name="title_advanced">高级设置</string>
+    <string name="title_general">通用</string>
+    <string name="title_display">显示</string>
+    <string name="title_network">网络</string>
+    <string name="title_voice">语音</string>
+    <string name="title_data">数据管理</string>
+
+    <!-- ========== 输入提示 ========== -->
+    <string name="hint_input_message">输入消息...</string>
+    <string name="hint_input_api_url">请输入API基础URL</string>
+    <string name="hint_input_api_key">请输入API密钥</string>
+    <string name="hint_input_model_name">请输入模型名称</string>
+    <string name="hint_input_search">搜索对话、消息...</string>
+    <string name="hint_input_name">请输入名称</string>
+    <string name="hint_input_email">请输入邮箱地址</string>
+    <string name="hint_input_password">请输入密码</string>
+    <string name="hint_input_confirm_password">请再次输入密码</string>
+    <string name="hint_input_feedback">请描述您遇到的问题或建议...</string>
+    <string name="hint_input_prompt">输入提示词内容...</string>
+    <string name="hint_input_title">请输入标题</string>
+    <string name="hint_input_description">请输入描述</string>
+    <string name="hint_input_tag">请输入标签</string>
+    <string name="hint_empty_message">暂无消息，开始对话吧</string>
+
+    <!-- ========== 状态/加载提示 ========== -->
+    <string name="loading">加载中...</string>
+    <string name="loading_messages">正在加载消息...</string>
+    <string name="loading_conversations">正在加载会话...</string>
+    <string name="loading_send">发送中...</string>
+    <string name="loading_thinking">AI正在思考...</string>
+    <string name="loading_upload">上传中...</string>
+    <string name="loading_download">下载中...</string>
+    <string name="loading_refresh">刷新中...</string>
+    <string name="loading_save">保存中...</string>
+    <string name="loading_delete">删除中...</string>
+    <string name="loading_login">登录中...</string>
+    <string name="loading_verify">验证中...</string>
+
+    <!-- ========== 成功提示 ========== -->
+    <string name="success_save">保存成功</string>
+    <string name="success_delete">删除成功</string>
+    <string name="success_copy">复制成功</string>
+    <string name="success_send">发送成功</string>
+    <string name="success_upload">上传成功</string>
+    <string name="success_download">下载成功</string>
+    <string name="success_login">登录成功</string>
+    <string name="success_logout">已退出登录</string>
+    <string name="success_export">导出成功</string>
+    <string name="success_import">导入成功</string>
+    <string name="success_update">更新成功</string>
+    <string name="success_reset">重置成功</string>
+    <string name="success_verify">验证成功</string>
+    <string name="success_submit">提交成功</string>
+
+    <!-- ========== 错误提示 ========== -->
+    <string name="error_network">网络连接失败，请检查网络设置</string>
+    <string name="error_network_timeout">请求超时，请稍后重试</string>
+    <string name="error_network_unavailable">网络不可用，请检查网络连接</string>
+    <string name="error_server">服务器错误，请稍后重试</string>
+    <string name="error_server_busy">服务器繁忙，请稍后重试</string>
+    <string name="error_unknown">未知错误，请重试</string>
+    <string name="error_empty_input">输入不能为空</string>
+    <string name="error_invalid_input">输入格式不正确</string>
+    <string name="error_invalid_url">URL格式不正确</string>
+    <string name="error_invalid_key">API密钥无效</string>
+    <string name="error_auth_failed">认证失败，请检查API密钥</string>
+    <string name="error_permission_denied">权限被拒绝</string>
+    <string name="error_storage_denied">存储权限被拒绝</string>
+    <string name="error_camera_denied">相机权限被拒绝</string>
+    <string name="error_microphone_denied">麦克风权限被拒绝</string>
+    <string name="error_notification_denied">通知权限被拒绝</string>
+    <string name="error_file_not_found">文件不存在</string>
+    <string name="error_file_too_large">文件大小超出限制</string>
+    <string name="error_file_format">不支持的文件格式</string>
+    <string name="error_quota_exceeded">请求次数已达上限</string>
+    <string name="error_rate_limit">请求过于频繁，请稍后再试</string>
+    <string name="error_model_not_found">未找到指定模型</string>
+    <string name="error_message_too_long">消息长度超出限制</string>
+    <string name="error_try_again">操作失败，请重试</string>
+    <string name="error_connection_lost">连接已断开</string>
+    <string name="error_data_parse">数据解析失败</string>
+    <string name="error_database">数据库操作失败</string>
+    <string name="error_cache">缓存操作失败</string>
+
+    <!-- ========== 设置项 - 通用 ========== -->
+    <string name="settings_general">通用设置</string>
+    <string name="settings_notification">通知设置</string>
+    <string name="settings_privacy">隐私设置</string>
+    <string name="settings_about">关于应用</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_check_update">检查更新</string>
+    <string name="settings_feedback">意见反馈</string>
+    <string name="settings_help">帮助中心</string>
+    <string name="settings_terms">用户协议</string>
+    <string name="settings_privacy_policy">隐私政策</string>
+    <string name="settings_version">当前版本</string>
+
+    <!-- ========== 设置项 - API配置 ========== -->
+    <string name="settings_api_config">API接口配置</string>
+    <string name="settings_api_url">API基础URL</string>
+    <string name="settings_api_url_desc">自定义API服务地址</string>
+    <string name="settings_api_key">API密钥</string>
+    <string name="settings_api_key_desc">用于身份验证的密钥</string>
+    <string name="settings_model">模型选择</string>
+    <string name="settings_model_desc">选择对话使用的AI模型</string>
+    <string name="settings_temperature">创造性</string>
+    <string name="settings_temperature_desc">控制回复的随机性，值越高越发散</string>
+    <string name="settings_max_tokens">最大长度</string>
+    <string name="settings_max_tokens_desc">控制回复的最大token数量</string>
+    <string name="settings_top_p">核采样</string>
+    <string name="settings_top_p_desc">控制词汇多样性</string>
+    <string name="settings_system_prompt">系统提示词</string>
+    <string name="settings_system_prompt_desc">设定AI的角色和行为</string>
+    <string name="settings_stream">流式输出</string>
+    <string name="settings_stream_desc">逐字显示AI回复</string>
+    <string name="settings_timeout">超时时间</string>
+    <string name="settings_timeout_desc">网络请求超时时间（秒）</string>
+
+    <!-- ========== 设置项 - 显示 ========== -->
+    <string name="settings_theme">主题模式</string>
+    <string name="settings_theme_desc">选择浅色/深色/跟随系统</string>
+    <string name="settings_theme_light">浅色模式</string>
+    <string name="settings_theme_dark">深色模式</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_font_size">字体大小</string>
+    <string name="settings_font_size_desc">调整聊天文字大小</string>
+    <string name="settings_font_small">小</string>
+    <string name="settings_font_medium">中</string>
+    <string name="settings_font_large">大</string>
+    <string name="settings_font_xlarge">超大</string>
+    <string name="settings_bubble_style">气泡样式</string>
+    <string name="settings_bubble_style_desc">选择聊天气泡外观</string>
+    <string name="settings_markdown">Markdown渲染</string>
+    <string name="settings_markdown_desc">渲染Markdown格式回复</string>
+    <string name="settings_code_highlight">代码高亮</string>
+    <string name="settings_code_highlight_desc">代码块语法高亮显示</string>
+    <string name="settings_dynamic_color">动态取色</string>
+    <string name="settings_dynamic_color_desc">根据壁纸自动匹配主题色</string>
+
+    <!-- ========== 设置项 - 通知 ========== -->
+    <string name="settings_notification_enable">接收通知</string>
+    <string name="settings_notification_enable_desc">接收新消息通知</string>
+    <string name="settings_notification_sound">通知声音</string>
+    <string name="settings_notification_sound_desc">收到通知时播放声音</string>
+    <string name="settings_notification_vibrate">振动</string>
+    <string name="settings_notification_vibrate_desc">收到通知时振动</string>
+    <string name="settings_notification_light">呼吸灯</string>
+    <string name="settings_notification_light_desc">收到通知时闪烁指示灯</string>
+
+    <!-- ========== 设置项 - 数据 ========== -->
+    <string name="settings_data_management">数据管理</string>
+    <string name="settings_save_history">保存聊天记录</string>
+    <string name="settings_save_history_desc">自动保存对话历史</string>
+    <string name="settings_export_data">导出数据</string>
+    <string name="settings_export_data_desc">导出所有聊天记录</string>
+    <string name="settings_import_data">导入数据</string>
+    <string name="settings_import_data_desc">从备份文件恢复</string>
+    <string name="settings_backup">自动备份</string>
+    <string name="settings_backup_desc">定期备份数据到云端</string>
+    <string name="settings_clear_all_history">清除所有历史记录</string>
+    <string name="settings_clear_all_history_desc">删除所有对话和消息</string>
+
+    <!-- ========== 对话框 ========== -->
+    <string name="dialog_confirm_delete_title">确认删除</string>
+    <string name="dialog_confirm_delete_message">确定要删除吗？此操作不可撤销。</string>
+    <string name="dialog_confirm_clear_title">确认清除</string>
+    <string name="dialog_confirm_clear_message">确定要清除所有缓存吗？</string>
+    <string name="dialog_confirm_exit_title">退出确认</string>
+    <string name="dialog_confirm_exit_message">确定要退出应用吗？</string>
+    <string name="dialog_input_title">请输入</string>
+    <string name="dialog_progress_title">处理中</string>
+    <string name="dialog_choice_title">请选择</string>
+    <string name="dialog_warning_title">警告</string>
+    <string name="dialog_error_title">错误</string>
+    <string name="dialog_info_title">提示</string>
+
+    <!-- ========== 空状态 ========== -->
+    <string name="empty_conversations">暂无对话\n点击右下角按钮开始新对话</string>
+    <string name="empty_messages">暂无消息\n发送一条消息开始对话</string>
+    <string name="empty_search">未找到相关结果</string>
+    <string name="empty_favorites">暂无收藏内容</string>
+    <string name="empty_history">暂无历史记录</string>
+    <string name="empty_prompt">暂无提示词</string>
+    <string name="empty_network">网络连接不可用\n请检查网络后重试</string>
+    <string name="empty_error">加载失败\n点击重试</string>
+
+    <!-- ========== 聊天相关 ========== -->
+    <string name="chat_user_you">我</string>
+    <string name="chat_ai_assistant">AI助手</string>
+    <string name="chat_system">系统</string>
+    <string name="chat_new_conversation">新对话</string>
+    <string name="chat_delete_conversation">删除对话</string>
+    <string name="chat_rename_conversation">重命名对话</string>
+    <string name="chat_export_conversation">导出对话</string>
+    <string name="chat_copy_message">复制消息</string>
+    <string name="chat_regenerate">重新生成</string>
+    <string name="chat_stop_generating">停止生成</string>
+    <string name="chat_thinking">正在思考...</string>
+    <string name="chat_error_retry">回复出错，点击重试</string>
+    <string name="chat_tokens_used">已消耗 %1$d tokens</string>
+    <string name="chat_messages_count">%1$d 条消息</string>
+    <string name="chat_model_label">模型：%1$s</string>
+    <string name="chat_swipe_to_delete">左滑删除</string>
+
+    <!-- ========== 引导页 ========== -->
+    <string name="onboarding_welcome_title">欢迎使用爱Ai</string>
+    <string name="onboarding_welcome_desc">智能对话助手，让AI成为你的得力伙伴</string>
+    <string name="onboarding_feature1_title">智能对话</string>
+    <string name="onboarding_feature1_desc">支持多种AI模型，流畅自然的对话体验</string>
+    <string name="onboarding_feature2_title">Markdown渲染</string>
+    <string name="onboarding_feature2_desc">完美支持Markdown格式，代码高亮，表格渲染</string>
+    <string name="onboarding_feature3_title">隐私安全</string>
+    <string name="onboarding_feature3_desc">数据本地存储，保护你的隐私安全</string>
+    <string name="onboarding_next">下一步</string>
+    <string name="onboarding_skip">跳过</string>
+    <string name="onboarding_done">开始使用</string>
+
+    <!-- ========== 通知 ========== -->
+    <string name="notification_channel_chat_name">聊天通知</string>
+    <string name="notification_channel_chat_desc">AI回复消息时的通知</string>
+    <string name="notification_channel_default_name">通用通知</string>
+    <string name="notification_channel_default_desc">应用常规通知</string>
+    <string name="notification_chat_title">新消息</string>
+    <string name="notification_chat_text">AI已回复你的消息</string>
+    <string name="notification_service_title">爱Ai正在运行</string>
+    <string name="notification_service_text">保持后台连接，及时接收回复</string>
+
+    <!-- ========== 快捷方式 ========== -->
+    <string name="shortcut_new_chat">新对话</string>
+    <string name="shortcut_new_chat_long">快速开始新对话</string>
+    <string name="shortcut_prompt">提示词库</string>
+    <string name="shortcut_prompt_long">浏览和使用提示词模板</string>
+    <string name="shortcut_settings">设置</string>
+    <string name="shortcut_settings_long">打开应用设置</string>
+
+    <!-- ========== 关于页 ========== -->
+    <string name="about_version">版本信息</string>
+    <string name="about_author">开发者</string>
+    <string name="about_email">联系邮箱</string>
+    <string name="about_website">官方网站</string>
+    <string name="about_feedback">意见反馈</string>
+    <string name="about_license">开源许可</string>
+    <string name="about_third_party">第三方开源库</string>
+    <string name="about_update_check">检查更新</string>
+    <string name="about_disclaimer">免责声明</string>
+    <string name="about_disclaimer_content">本应用仅供学习交流使用，AI生成内容不代表开发者立场。</string>
+
+    <!-- ========== 开源许可名称 ========== -->
+    <string name="license_androidx">AndroidX</string>
+    <string name="license_material">Material Components for Android</string>
+    <string name="license_hilt">Hilt - Dependency Injection</string>
+    <string name="license_retrofit">Retrofit</string>
+    <string name="license_okhttp">OkHttp</string>
+    <string name="license_gson">Gson</string>
+    <string name="license_room">Room Database</string>
+    <string name="license_navigation">Android Navigation</string>
+    <string name="license_lifecycle">Android Lifecycle</string>
+    <string name="license_glide">Glide</string>
+    <string name="license_markwon">Markwon</string>
+    <string name="license_exoplayer">AndroidX Media3</string>
+    <string name="license_mmkv">MMKV</string>
+    <string name="license_coroutines">Kotlin Coroutines</string>
+    <string name="license_datastore">DataStore</string>
+    <string name="license_paging">Android Paging</string>
+
+    <!-- ========== 菜单 ========== -->
+    <string name="menu_new_chat">新对话</string>
+    <string name="menu_history">历史记录</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_export">导出</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_rename">重命名</string>
+    <string name="menu_pin">置顶</string>
+    <string name="menu_unpin">取消置顶</string>
+    <string name="menu_favorite">收藏</string>
+    <string name="menu_unfavorite">取消收藏</string>
+    <string name="menu_clear_history">清空历史</string>
+
+    <!-- ========== 模型列表 ========== -->
+    <string name="model_gpt35">GPT-3.5 Turbo</string>
+    <string name="model_gpt4">GPT-4</string>
+    <string name="model_gpt4_turbo">GPT-4 Turbo</string>
+    <string name="model_gpt4o">GPT-4o</string>
+    <string name="model_claude3">Claude 3</string>
+    <string name="model_claude35">Claude 3.5 Sonnet</string>
+    <string name="model_gemini">Gemini Pro</string>
+    <string name="model_local">本地模型</string>
+
+    <!-- ========== 权限说明 ========== -->
+    <string name="permission_camera_title">相机权限</string>
+    <string name="permission_camera_message">需要相机权限以拍摄图片发送给AI</string>
+    <string name="permission_storage_title">存储权限</string>
+    <string name="permission_storage_message">需要存储权限以保存和分享图片</string>
+    <string name="permission_microphone_title">麦克风权限</string>
+    <string name="permission_microphone_message">需要麦克风权限以进行语音输入</string>
+    <string name="permission_notification_title">通知权限</string>
+    <string name="permission_notification_message">需要通知权限以接收AI回复提醒</string>
+    <string name="permission_grant">去授权</string>
+    <string name="permission_denied">权限被拒绝</string>
+
+    <!-- ========== 其他 ========== -->
+    <string name="app_name_short">爱Ai</string>
+    <string name="loading_more">加载更多...</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="network_error">网络错误</string>
+    <string name="no_network">无网络连接</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
+    <string name="please_wait">请稍候...</string>
+    <string name="operation_success">操作成功</string>
+    <string name="operation_failed">操作失败</string>
+    <string name="are_you_sure">确定吗？</string>
+    <string name="confirm_delete">确认删除</string>
+    <string name="cancel_delete">取消删除</string>
+    <string name="select_language">选择语言</string>
+    <string name="language_system">跟随系统</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+    <string name="theme_mode_system">跟随系统</string>
+    <string name="theme_mode_light">浅色</string>
+    <string name="theme_mode_dark">深色</string>
+
+    <!-- ========== 对话列表 ========== -->
+    <string name="conversation_new">新建对话</string>
+    <string name="conversation_search">搜索对话</string>
+    <string name="conversation_pin">置顶对话</string>
+    <string name="conversation_unpin">取消置顶</string>
+    <string name="conversation_rename">重命名对话</string>
+    <string name="conversation_delete">删除对话</string>
+    <string name="conversation_export">导出对话</string>
+    <string name="conversation_share">分享对话</string>
+    <string name="conversation_empty_title">开始你的第一次对话</string>
+    <string name="conversation_empty_desc">点击下方按钮，向AI提问任何问题</string>
+    <string name="conversation_pinned">已置顶</string>
+    <string name="conversation_group_today">今天</string>
+    <string name="conversation_group_yesterday">昨天</string>
+    <string name="conversation_group_last_7_days">最近7天</string>
+    <string name="conversation_group_last_30_days">最近30天</string>
+    <string name="conversation_group_older">更早</string>
+
+    <!-- ========== 消息操作 ========== -->
+    <string name="message_copy">复制</string>
+    <string name="message_share">分享</string>
+    <string name="message_regenerate">重新生成</string>
+    <string name="message_speak">朗读</string>
+    <string name="message_stop_speak">停止朗读</string>
+    <string name="message_feedback_good">点赞</string>
+    <string name="message_feedback_bad">点踩</string>
+    <string name="message_report">举报</string>
+    <string name="message_timestamp_format">HH:mm</string>
+    <string name="message_date_format">MM月dd日 HH:mm</string>
+    <string name="message_sent_at">发送于 %1$s</string>
+    <string name="message_received_at">接收于 %1$s</string>
+
+    <!-- ========== 提示词库 ========== -->
+    <string name="prompt_library">提示词库</string>
+    <string name="prompt_category_all">全部</string>
+    <string name="prompt_category_writing">写作</string>
+    <string name="prompt_category_coding">编程</string>
+    <string name="prompt_category_learning">学习</string>
+    <string name="prompt_category_business">商业</string>
+    <string name="prompt_category_creative">创意</string>
+    <string name="prompt_category_daily">生活</string>
+    <string name="prompt_use">使用此提示词</string>
+    <string name="prompt_edit">编辑提示词</string>
+    <string name="prompt_delete">删除提示词</string>
+    <string name="prompt_add_custom">自定义提示词</string>
+    <string name="prompt_name_hint">提示词名称</string>
+    <string name="prompt_content_hint">提示词内容</string>
+    <string name="prompt_tags_hint">标签（逗号分隔）</string>
+    <string name="prompt_favorite">收藏</string>
+    <string name="prompt_unfavorite">取消收藏</string>
+
+    <!-- ========== API配置扩展 ========== -->
+    <string name="api_config_advanced">高级设置</string>
+    <string name="api_config_proxy">代理设置</string>
+    <string name="api_config_proxy_host">代理地址</string>
+    <string name="api_config_proxy_port">代理端口</string>
+    <string name="api_config_cert_pinning">证书固定</string>
+    <string name="api_config_cert_pinning_desc">增强安全性，固定服务器证书</string>
+    <string name="api_config_test_connection">测试连接</string>
+    <string name="api_config_testing">正在测试连接...</string>
+    <string name="api_config_test_success">连接成功</string>
+    <string name="api_config_test_failed">连接失败</string>
+    <string name="api_config_reset_default">恢复默认配置</string>
+    <string name="api_config_reset_confirm">确定要恢复默认API配置吗？</string>
+    <string name="api_key_visibility">显示/隐藏密钥</string>
+    <string name="api_key_empty_warning">请先配置API密钥</string>
+
+    <!-- ========== 存储管理 ========== -->
+    <string name="storage_cache_size">缓存大小</string>
+    <string name="storage_clear_cache_confirm">确定要清除所有缓存吗？此操作不会删除聊天记录。</string>
+    <string name="storage_cache_cleared">缓存已清除</string>
+    <string name="storage_database_size">数据库大小</string>
+    <string name="storage_images_size">图片缓存</string>
+    <string name="storage_files_size">文件缓存</string>
+    <string name="storage_total_used">总占用</string>
+    <string name="storage_clear_all">清除所有缓存</string>
+
+    <!-- ========== 安全设置 ========== -->
+    <string name="security_app_lock">应用锁</string>
+    <string name="security_app_lock_desc">使用密码或指纹解锁应用</string>
+    <string name="security_app_lock_password">设置密码</string>
+    <string name="security_app_lock_fingerprint">指纹解锁</string>
+    <string name="security_app_lock_auto_lock">自动锁定</string>
+    <string name="security_app_lock_immediately">立即</string>
+    <string name="security_app_lock_30s">30秒后</string>
+    <string name="security_app_lock_1min">1分钟后</string>
+    <string name="security_app_lock_5min">5分钟后</string>
+    <string name="security_privacy_mode">隐私模式</string>
+    <string name="security_privacy_mode_desc">隐藏通知内容</string>
+    <string name="security_clipboard_clear">自动清除剪贴板</string>
+
+    <!-- ========== 反馈页面 ========== -->
+    <string name="feedback_type_bug">功能异常</string>
+    <string name="feedback_type_feature">功能建议</string>
+    <string name="feedback_type_other">其他</string>
+    <string name="feedback_content_hint">请详细描述您遇到的问题...</string>
+    <string name="feedback_contact_hint">联系方式（选填）</string>
+    <string name="feedback_attach_screenshot">添加截图</string>
+    <string name="feedback_submit">提交反馈</string>
+    <string name="feedback_thank_you">感谢您的反馈！</string>
+    <string name="feedback_list">反馈历史</string>
+
+    <!-- ========== 更新 ========== -->
+    <string name="update_latest">已是最新版本</string>
+    <string name="update_available">发现新版本</string>
+    <string name="update_downloading">正在下载更新...</string>
+    <string name="update_installing">正在安装更新...</string>
+    <string name="update_install_now">立即安装</string>
+    <string name="update_later">稍后提醒</string>
+    <string name="update_whats_new">新特性</string>
+    <string name="update_size">下载大小</string>
+
+    <!-- ========== Widget ========== -->
+    <string name="widget_new_chat">新对话</string>
+    <string name="widget_quick_action">快速操作</string>
+    <string name="widget_tap_to_start">点击开始对话</string>
+
+    <!-- ========== 语音 ========== -->
+    <string name="voice_listening">正在聆听...</string>
+    <string name="voice_processing">正在识别语音...</string>
+    <string name="voice_recognize_failed">语音识别失败</string>
+    <string name="voice_speaking">正在播放...</string>
+    <string name="voice_tts_settings">语音设置</string>
+    <string name="voice_speed">语速</string>
+    <string name="voice_pitch">音调</string>
+    <string name="voice_language">语音语言</string>
+
+    <!-- ========== 文件操作 ========== -->
+    <string name="file_selected">已选择文件：%1$s</string>
+    <string name="file_size_format">%1$.2f MB</string>
+    <string name="file_type_image">图片</string>
+    <string name="file_type_document">文档</string>
+    <string name="file_type_archive">压缩包</string>
+    <string name="file_type_other">其他文件</string>
+    <string name="file_upload_failed">文件上传失败</string>
+    <string name="file_download_failed">文件下载失败</string>
+
+    <!-- ========== 模型参数 ========== -->
+    <string name="param_temperature_label">创造性（Temperature）</string>
+    <string name="param_temperature_hint">0.0 - 2.0，默认0.7</string>
+    <string name="param_max_tokens_label">最大Token数</string>
+    <string name="param_max_tokens_hint">1 - 128000，默认2048</string>
+    <string name="param_top_p_label">核采样（Top P）</string>
+    <string name="param_top_p_hint">0.0 - 1.0，默认1.0</string>
+    <string name="param_presence_penalty">存在惩罚</string>
+    <string name="param_frequency_penalty">频率惩罚</string>
+    <string name="param_stop_sequences">停止序列</string>
+
+    <!-- ========== 其他补充 ========== -->
+    <string name="loading_failed">加载失败</string>
+    <string name="network_connected">网络已连接</string>
+    <string name="network_disconnected">网络已断开</string>
+    <string name="confirm_exit">再按一次退出应用</string>
+    <string name="search_history_empty">暂无搜索历史</string>
+    <string name="search_result_count">找到 %1$d 条结果</string>
+    <string name="theme_color_custom">自定义颜色</string>
+    <string name="theme_color_purple">紫色</string>
+    <string name="theme_color_blue">蓝色</string>
+    <string name="theme_color_green">绿色</string>
+    <string name="theme_color_orange">橙色</string>
+    <string name="theme_color_red">红色</string>
+    <string name="theme_color_pink">粉色</string>
+    <string name="bubble_style_rounded">圆角气泡</string>
+    <string name="bubble_style_flat">扁平气泡</string>
+    <string name="bubble_style_shadow">阴影气泡</string>
+
+    <!-- ========== 认证相关 ========== -->
+    <string name="login">登录</string>
+    <string name="logout">登出</string>
+    <string name="register">注册</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="email">邮箱</string>
+    <string name="phone">手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="change_password">修改密码</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="logout_success">已退出登录</string>
+    <string name="register_success">注册成功</string>
+    <string name="account_not_exist">账号不存在</string>
+    <string name="password_incorrect">密码错误</string>
+    <string name="username_exists">用户名已存在</string>
+    <string name="email_exists">邮箱已被注册</string>
+    <string name="code_sent">验证码已发送</string>
+    <string name="code_expired">验证码已过期</string>
+    <string name="code_incorrect">验证码错误</string>
+
+    <!-- ========== 支付相关 ========== -->
+    <string name="payment">支付</string>
+    <string name="order">订单</string>
+    <string name="order_list">订单列表</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_create">创建订单</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_status_pending">待支付</string>
+    <string name="order_status_paid">已支付</string>
+    <string name="order_status_cancelled">已取消</string>
+    <string name="order_status_refunded">已退款</string>
+    <string name="refund">退款</string>
+    <string name="refund_reason">退款原因</string>
+    <string name="refund_success">退款申请已提交</string>
+    <string name="bill">账单</string>
+    <string name="bill_list">账单列表</string>
+    <string name="total_amount">总金额</string>
+    <string name="payment_method">支付方式</string>
+    <string name="payment_alipay">支付宝</string>
+    <string name="payment_wechat">微信支付</string>
+    <string name="payment_balance">余额支付</string>
+    <string name="balance">余额</string>
+    <string name="recharge">充值</string>
+    <string name="vip_member">VIP会员</string>
+    <string name="vip_expire">会员到期时间</string>
+
+    <!-- ========== 反馈相关 ========== -->
+    <string name="feedback">反馈</string>
+    <string name="feedback_title">反馈标题</string>
+    <string name="feedback_content">反馈内容</string>
+    <string name="feedback_type">反馈类型</string>
+    <string name="feedback_type_feature">功能建议</string>
+    <string name="feedback_type_bug">Bug报告</string>
+    <string name="feedback_type_consult">使用咨询</string>
+    <string name="feedback_type_other">其他</string>
+    <string name="feedback_submit">提交反馈</string>
+    <string name="feedback_success">反馈提交成功</string>
+    <string name="feedback_list">反馈列表</string>
+    <string name="feedback_detail">反馈详情</string>
+    <string name="feedback_reply">回复</string>
+    <string name="feedback_status_pending">待处理</string>
+    <string name="feedback_status_processing">处理中</string>
+    <string name="feedback_status_replied">已回复</string>
+    <string name="feedback_status_closed">已关闭</string>
+    <string name="upload_image">上传图片</string>
+    <string name="upload_failed">上传失败</string>
+
+    <!-- ========== 版本更新 ========== -->
+    <string name="check_update">检查更新</string>
+    <string name="new_version_available">发现新版本</string>
+    <string name="latest_version">已是最新版本</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">稍后再说</string>
+    <string name="update_log">更新日志</string>
+    <string name="downloading">下载中</string>
+    <string name="download_progress">下载进度：%1$d%%</string>
+    <string name="download_complete">下载完成</string>
+    <string name="install_now">立即安装</string>
+    <string name="force_update">当前版本过低，请更新后使用</string>
+
+    <!-- ========== 统计相关 ========== -->
+    <string name="statistics">统计</string>
+    <string name="usage_statistics">使用统计</string>
+    <string name="total_requests">总请求数</string>
+    <string name="total_tokens">总Token数</string>
+    <string name="active_users">活跃用户</string>
+    <string name="today_active">今日活跃</string>
+    <string name="trend_data">趋势数据</string>
+    <string name="ranking">排行榜</string>
+    <string name="overview">概览</string>
+    <string name="realtime">实时</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+
+    <!-- ========== 设置相关扩展 ========== -->
+    <string name="settings_account">账号设置</string>
+    <string name="settings_privacy">隐私设置</string>
+    <string name="settings_notification">通知设置</string>
+    <string name="settings_storage">存储设置</string>
+    <string name="settings_about">关于我们</string>
+    <string name="settings_help">帮助中心</string>
+    <string name="settings_feedback">意见反馈</string>
+    <string name="settings_terms">用户协议</string>
+    <string name="settings_privacy_policy">隐私政策</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_clear_history">清除历史记录</string>
+    <string name="settings_auto_save">自动保存</string>
+    <string name="settings_cloud_sync">云端同步</string>
+    <string name="settings_backup">数据备份</string>
+    <string name="settings_restore">数据恢复</string>
+    <string name="settings_export">导出数据</string>
+    <string name="settings_import">导入数据</string>
+
+    <!-- ========== 聊天相关扩展 ========== -->
+    <string name="chat_send">发送</string>
+    <string name="chat_input_hint">输入消息...</string>
+    <string name="chat_thinking">思考中...</string>
+    <string name="chat_typing">正在输入...</string>
+    <string name="chat_copy">复制</string>
+    <string name="chat_retry">重试</string>
+    <string name="chat_regenerate">重新生成</string>
+    <string name="chat_stop">停止生成</string>
+    <string name="chat_new_session">新建对话</string>
+    <string name="chat_clear_session">清空对话</string>
+    <string name="chat_delete_session">删除对话</string>
+    <string name="chat_rename_session">重命名对话</string>
+    <string name="chat_pin_session">置顶对话</string>
+    <string name="chat_unpin_session">取消置顶</string>
+    <string name="chat_share">分享对话</string>
+    <string name="chat_export">导出对话</string>
+    <string name="chat_empty">暂无对话，开始新的聊天吧</string>
+    <string name="chat_load_more">加载更多</string>
+    <string name="chat_no_more">没有更多了</string>
+
+    <!-- ========== 错误提示 ========== -->
+    <string name="error_network">网络连接失败，请检查网络设置</string>
+    <string name="error_server">服务器错误，请稍后重试</string>
+    <string name="error_timeout">请求超时，请稍后重试</string>
+    <string name="error_unknown">未知错误</string>
+    <string name="error_permission_denied">权限被拒绝</string>
+    <string name="error_storage">存储空间不足</string>
+    <string name="error_file_not_found">文件不存在</string>
+    <string name="error_file_too_large">文件过大</string>
+    <string name="error_invalid_format">格式不正确</string>
+    <string name="error_too_many_requests">请求过于频繁，请稍后再试</string>
+    <string name="error_token_expired">登录已过期，请重新登录</string>
+    <string name="error_vip_required">此功能需要VIP会员</string>
+    <string name="error_quota_exceeded">使用次数已达上限</string>
+
+    <!-- ========== 成功提示 ========== -->
+    <string name="success_save">保存成功</string>
+    <string name="success_delete">删除成功</string>
+    <string name="success_copy">复制成功</string>
+    <string name="success_upload">上传成功</string>
+    <string name="success_download">下载成功</string>
+    <string name="success_send">发送成功</string>
+    <string name="success_update">更新成功</string>
+    <string name="success_backup">备份成功</string>
+    <string name="success_restore">恢复成功</string>
+
+    <!-- ========== 确认对话框 ========== -->
+    <string name="confirm_delete">确认删除？</string>
+    <string name="confirm_clear">确认清空？</string>
+    <string name="confirm_logout">确认退出登录？</string>
+    <string name="confirm_cancel_order">确认取消订单？</string>
+    <string name="confirm_refund">确认申请退款？</string>
+    <string name="confirm_reset">确认重置？</string>
+
+    <!-- ========== 其他 ========== -->
+    <string name="loading">加载中...</string>
+    <string name="retry">重试</string>
+    <string name="refresh">刷新</string>
+    <string name="load_more">加载更多</string>
+    <string name="no_data">暂无数据</string>
+    <string name="empty_view">空空如也</string>
+    <string name="network_error">网络错误</string>
+    <string name="server_error">服务器错误</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="search">搜索</string>
+    <string name="filter">筛选</string>
+    <string name="sort">排序</string>
+    <string name="all">全部</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+    <string name="just_now">刚刚</string>
+    <string name="minutes_ago">%1$d分钟前</string>
+    <string name="hours_ago">%1$d小时前</string>
+    <string name="days_ago">%1$d天前</string>
+
+</resources>

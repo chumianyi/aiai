@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 导出聊天菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_select_all"
+        android:title="全选"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share"
+        android:showAsAction="never" />
+</menu>

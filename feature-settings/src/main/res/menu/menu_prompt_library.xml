@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 提示词库菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add"
+        android:title="@string/add"
+        android:icon="@drawable/ic_clear"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_filter_fav"
+        android:title="只看收藏"
+        android:checkable="true"
+        android:showAsAction="never" />
+</menu>

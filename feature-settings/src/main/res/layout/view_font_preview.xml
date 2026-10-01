@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  字体预览。
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvSample"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:lineSpacingExtra="6dp"
+    android:text="爱Ai 让 AI 对话更简单。The quick brown fox jumps over the lazy dog."
+    android:textColor="@color/text_primary" />

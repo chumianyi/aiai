@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 应用通用 ============ -->
+    <string name="app_name">爱Ai</string>
+    <string name="settings">设置</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="delete">删除</string>
+    <string name="add">添加</string>
+    <string name="edit">编辑</string>
+    <string name="close">关闭</string>
+    <string name="back">返回</string>
+    <string name="search">搜索</string>
+    <string name="reset">重置</string>
+    <string name="test">测试连接</string>
+    <string name="export">导出</string>
+    <string name="import">导入</string>
+    <string name="ok">好的</string>
+    <string name="loading">加载中…</string>
+    <string name="retry">重试</string>
+    <string name="clear">清除</string>
+    <string name="share">分享</string>
+
+    <!-- ============ 设置主页入口 ============ -->
+    <string name="settings_api_config">API 配置</string>
+    <string name="settings_api_config_desc">接口地址、密钥与模型</string>
+    <string name="settings_general">通用设置</string>
+    <string name="settings_general_desc">语言、缓存、通知与默认参数</string>
+    <string name="settings_appearance">外观设置</string>
+    <string name="settings_appearance_desc">深色模式、字体与主题</string>
+    <string name="settings_privacy">隐私设置</string>
+    <string name="settings_privacy_desc">数据收集与聊天记录管理</string>
+    <string name="settings_voice">语音设置</string>
+    <string name="settings_voice_desc">语音识别与自动播放</string>
+    <string name="settings_image_gen">图片生成设置</string>
+    <string name="settings_image_gen_desc">尺寸、风格与水印</string>
+    <string name="settings_prompt_library">提示词模板库</string>
+    <string name="settings_prompt_library_desc">内置与自定义提示词</string>
+    <string name="settings_favorite">收藏管理</string>
+    <string name="settings_favorite_desc">查看与导出收藏内容</string>
+    <string name="settings_export_chat">导出聊天记录</string>
+    <string name="settings_export_chat_desc">选择会话与格式导出</string>
+    <string name="settings_plugin">插件管理</string>
+    <string name="settings_plugin_desc">发现、安装与启用插件</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_about_desc">版本、许可与联系方式</string>
+    <string name="settings_key_management">密钥管理</string>
+
+    <!-- ============ API 配置 ============ -->
+    <string name="api_base_url">接口地址</string>
+    <string name="api_base_url_hint">https://api.example.com/v1</string>
+    <string name="api_key_label">API 密钥</string>
+    <string name="api_key_hint">sk-xxxxxxxxxxxxxxxx</string>
+    <string name="api_model_name">模型名称</string>
+    <string name="api_model_hint">gpt-4o-mini</string>
+    <string name="api_testing">正在测试连接…</string>
+    <string name="api_test_success">连接成功，延迟 %1$d ms</string>
+    <string name="api_test_failed">连接失败：%1$s</string>
+    <string name="api_saved">配置已保存</string>
+    <string name="api_url_invalid">请输入合法的接口地址</string>
+    <string name="api_key_empty">请输入 API 密钥</string>
+
+    <!-- ============ 通用设置 ============ -->
+    <string name="general_language">语言</string>
+    <string name="general_cache">缓存清理</string>
+    <string name="general_notification">消息通知</string>
+    <string name="general_auto_update">自动更新</string>
+    <string name="general_send_method">发送方式</string>
+    <string name="general_default_params">默认对话参数</string>
+    <string name="general_cache_size">已缓存 %1$s</string>
+    <string name="general_cache_cleared">缓存已清理</string>
+
+    <!-- ============ 外观设置 ============ -->
+    <string name="appearance_dark_mode">深色模式</string>
+    <string name="appearance_dark_mode_system">跟随系统</string>
+    <string name="appearance_dark_mode_on">开启</string>
+    <string name="appearance_dark_mode_off">关闭</string>
+    <string name="appearance_font_size">字体大小</string>
+    <string name="appearance_bubble_style">气泡样式</string>
+    <string name="appearance_theme_color">主题色</string>
+    <string name="appearance_animation">界面动画</string>
+
+    <!-- ============ 隐私设置 ============ -->
+    <string name="privacy_data_collection">匿名数据收集</string>
+    <string name="privacy_save_chat">保存聊天记录</string>
+    <string name="privacy_clear_data">清除全部数据</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="privacy_data_cleared">数据已清除</string>
+
+    <!-- ============ 关于 ============ -->
+    <string name="about_version">版本</string>
+    <string name="about_open_source">开源许可</string>
+    <string name="about_user_agreement">用户协议</string>
+    <string name="about_check_update">检查更新</string>
+    <string name="about_contact">联系我们</string>
+    <string name="about_new_version">发现新版本 v%1$s</string>
+    <string name="about_latest">已经是最新版本</string>
+
+    <!-- ============ 提示词库 ============ -->
+    <string name="prompt_search_hint">搜索提示词</string>
+    <string name="prompt_favorite">收藏</string>
+    <string name="prompt_used_count">已使用 %1$d 次</string>
+    <string name="prompt_custom">自定义模板</string>
+
+    <!-- ============ 导出 ============ -->
+    <string name="export_select_session">选择会话</string>
+    <string name="export_format">导出格式</string>
+    <string name="export_format_txt">纯文本 (TXT)</string>
+    <string name="export_format_md">Markdown (MD)</string>
+    <string name="export_format_json">JSON</string>
+    <string name="export_format_pdf">PDF</string>
+    <string name="export_progress">导出进度</string>
+    <string name="export_done">导出完成</string>
+    <string name="export_failed">导出失败</string>
+
+    <!-- ============ 语音设置 ============ -->
+    <string name="voice_engine">识别引擎</string>
+    <string name="voice_tone">音色选择</string>
+    <string name="voice_speed">语速</string>
+    <string name="voice_auto_play">自动播放语音回复</string>
+    <string name="voice_shortcut">语音快捷键</string>
+
+    <!-- ============ 图片生成 ============ -->
+    <string name="image_size">默认尺寸</string>
+    <string name="image_style">默认风格</string>
+    <string name="image_count">生成数量</string>
+    <string name="image_save_path">保存路径</string>
+    <string name="image_watermark">添加水印</string>
+
+</resources>

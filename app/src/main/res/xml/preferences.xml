@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_general">
+        <SwitchPreference android:key="notification_enabled" android:title="@string/settings_notification_enable"
+            android:defaultValue="true"/>
+        <SwitchPreference android:key="sound_enabled" android:title="@string/settings_notification_sound"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_api_config">
+        <EditTextPreference android:key="api_base_url" android:title="@string/settings_api_url"/>
+        <EditTextPreference android:key="api_key" android:title="@string/settings_api_key"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 隐私设置 Fragment -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aiai.settings.ui.view.SettingSwitchView
+        android:id="@+id/swDataCollect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:switchTitle="@string/privacy_data_collection" />
+
+    <com.aiai.settings.ui.view.SettingSwitchView
+        android:id="@+id/swSaveChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:switchTitle="@string/privacy_save_chat" />
+</LinearLayout>

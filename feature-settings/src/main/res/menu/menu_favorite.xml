@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 收藏管理菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_export"
+        android:title="@string/export"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear"
+        android:title="@string/clear"
+        android:showAsAction="never" />
+</menu>

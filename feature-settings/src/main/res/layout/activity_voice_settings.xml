@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 语音设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_window">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:title="@string/settings_voice" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.aiai.settings.ui.view.SettingSelectorView
+                android:id="@+id/selectEngine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:selectorTitle="@string/voice_engine" />
+
+            <com.aiai.settings.ui.view.SettingSelectorView
+                android:id="@+id/selectTone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:selectorTitle="@string/voice_tone" />
+
+            <com.aiai.settings.ui.view.SliderView
+                android:id="@+id/sliderSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sliderTitle="@string/voice_speed"
+                app:sliderMin="0.5"
+                app:sliderMax="2"
+                app:sliderStep="0.1" />
+
+            <com.aiai.settings.ui.view.SettingSwitchView
+                android:id="@+id/swAutoPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:switchTitle="@string/voice_auto_play" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

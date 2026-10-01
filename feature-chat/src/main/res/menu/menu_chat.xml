@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_clear"
+        android:title="清空对话"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:title="分享"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="对话设置"
+        android:showAsAction="never" />
+</menu>

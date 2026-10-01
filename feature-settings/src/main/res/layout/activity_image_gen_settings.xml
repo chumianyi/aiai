@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图片生成设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_window">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:title="@string/settings_image_gen" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.aiai.settings.ui.view.SettingSelectorView
+                android:id="@+id/selectSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:selectorTitle="@string/image_size" />
+
+            <com.aiai.settings.ui.view.SettingSelectorView
+                android:id="@+id/selectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:selectorTitle="@string/image_style" />
+
+            <com.aiai.settings.ui.view.SliderView
+                android:id="@+id/sliderCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sliderTitle="@string/image_count"
+                app:sliderMin="1"
+                app:sliderMax="9"
+                app:sliderStep="1" />
+
+            <com.aiai.settings.ui.view.SettingSwitchView
+                android:id="@+id/swWatermark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:switchTitle="@string/image_watermark" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

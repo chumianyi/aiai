@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<resources>
+    <!-- ChatBubbleView -->
+    <declare-styleable name="ChatBubbleView">
+        <attr name="bubbleColor" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="showTail" format="boolean" />
+        <attr name="tailOnLeft" format="boolean" />
+    </declare-styleable>
+
+    <!-- TypingIndicatorView -->
+    <declare-styleable name="TypingIndicatorView">
+        <attr name="dotColor" format="color" />
+        <attr name="dotRadius" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+    </declare-styleable>
+
+    <!-- MessageStatusView -->
+    <declare-styleable name="MessageStatusView">
+        <attr name="statusColor" format="color" />
+        <attr name="iconSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- FloatingActionButton -->
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fabColor" format="color" />
+        <attr name="fabIconColor" format="color" />
+        <attr name="fabSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- LoadingAnimationView -->
+    <declare-styleable name="LoadingAnimationView">
+        <attr name="animationColor" format="color" />
+        <attr name="waveCount" format="integer" />
+        <attr name="animationSpeed" format="float" />
+    </declare-styleable>
+
+    <!-- EmptyStateView -->
+    <declare-styleable name="EmptyStateView">
+        <attr name="emptyText" format="string" />
+    </declare-styleable>
+
+    <!-- GradientDivider -->
+    <declare-styleable name="GradientDivider">
+        <attr name="gradientColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+    </declare-styleable>
+
+    <!-- RoundedCornerLayout -->
+    <declare-styleable name="RoundedCornerLayout">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+        <attr name="clipContent" format="boolean" />
+    </declare-styleable>
+
+    <!-- GradientBackgroundView -->
+    <declare-styleable name="GradientBackgroundView">
+        <attr name="startColor" format="color" />
+        <attr name="centerColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="animate" format="boolean" />
+    </declare-styleable>
+
+    <!-- CodeBlockView -->
+    <declare-styleable name="CodeBlockView">
+        <attr name="codeLanguage" format="string" />
+        <attr name="codeText" format="string" />
+    </declare-styleable>
+
+    <!-- VoiceMessageView -->
+    <declare-styleable name="VoiceMessageView">
+        <attr name="voiceDuration" format="integer" />
+        <attr name="isFromUser" format="boolean" />
+    </declare-styleable>
+
+    <!-- ImageMessageView -->
+    <declare-styleable name="ImageMessageView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="placeholderColor" format="color" />
+    </declare-styleable>
+
+    <!-- FileMessageView -->
+    <declare-styleable name="FileMessageView">
+        <attr name="fileName" format="string" />
+        <attr name="fileSize" format="integer" />
+    </declare-styleable>
+
+    <!-- AutoResizeEditText -->
+    <declare-styleable name="AutoResizeEditText">
+        <attr name="maxLines" format="integer" />
+    </declare-styleable>
+
+    <!-- ConversationCardView -->
+    <declare-styleable name="ConversationCardView">
+        <attr name="cardTitle" format="string" />
+        <attr name="cardPreview" format="string" />
+        <attr name="cardTime" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 隐私设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_window">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:title="@string/settings_privacy" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.aiai.settings.ui.view.SettingSwitchView
+                android:id="@+id/swDataCollect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:switchTitle="@string/privacy_data_collection" />
+
+            <com.aiai.settings.ui.view.SettingSwitchView
+                android:id="@+id/swSaveChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:switchTitle="@string/privacy_save_chat" />
+
+            <Button
+                android:id="@+id/btnClearData"
+                style="@style/SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/error"
+                android:text="@string/privacy_clear_data" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

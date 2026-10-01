@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<resources>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#5A52D5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="bg_main">#F5F5F7</color>
+    <color name="bg_chat">#F0F2F5</color>
+    <color name="bg_card">#FFFFFFFF</color>
+    <color name="bg_appbar">#FFFFFFFF</color>
+    <color name="bg_input_bar">#FFFFFFFF</color>
+    <color name="bg_bottom_sheet">#FFFFFFFF</color>
+    <color name="bg_section">#F0F0F0</color>
+
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#999999</color>
+    <color name="divider">#E0E0E0</color>
+
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <color name="bottom_nav_color">#666666</color>
+
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+    <color name="success">#4CAF50</color>
+</resources>

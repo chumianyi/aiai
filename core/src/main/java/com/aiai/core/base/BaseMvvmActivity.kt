@@ -1,0 +1,45 @@
+/*
+ * Copyright (c) 2024 爱Ai (AiAi) Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific permissions and
+ * limitations under the License.
+ */
+package com.aiai.core.base
+
+import androidx.lifecycle.ViewModel
+import androidx.viewbinding.ViewBinding
+import com.aiai.common.model.UiState
+import com.aiai.common.ext.launchWhenStarted
+import com.aiai.common.util.other.Logger
+
+/**
+ * MVVM 模式基类 Activity。
+ *
+ * 自动收集 StateFlow，处理 Loading/Error/Success 状态。
+ */
+abstract class BaseMvvmActivity<VB : ViewBinding, VM : BaseViewModel> : BaseVmActivity<VB, VM>() {
+
+    override fun observeData() {
+        // 观察 Loading 状态
+        launchWhenStarted {
+            viewModel.loadingState.collect { isLoading ->
+                if (isLoading) showLoading() else hideLoading()
+            }
+        }
+        // 观察错误事件
+        launchWhenStarted {
+            viewModel.errorEvent.collect { error ->
+                showError(error)
+            }
+        }
+    }
+}

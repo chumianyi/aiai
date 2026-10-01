@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_window">@color/bg_window_dark</color>
+    <color name="bg_card">@color/bg_card_dark</color>
+    <color name="bg_divider">@color/bg_divider_dark</color>
+    <color name="text_primary">@color/text_primary_dark</color>
+    <color name="text_secondary">@color/text_secondary_dark</color>
+</resources>

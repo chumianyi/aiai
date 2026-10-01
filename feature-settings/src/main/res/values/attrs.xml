@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ SettingItemView ============ -->
+    <declare-styleable name="SettingItemView">
+        <attr name="settingIcon" format="reference" />
+        <attr name="settingTitle" format="string" />
+        <attr name="settingSubtitle" format="string" />
+        <attr name="settingShowArrow" format="boolean" />
+        <attr name="settingShowDivider" format="boolean" />
+        <attr name="settingIconTint" format="color" />
+    </declare-styleable>
+
+    <!-- ============ SettingSwitchView ============ -->
+    <declare-styleable name="SettingSwitchView">
+        <attr name="switchTitle" format="string" />
+        <attr name="switchSubtitle" format="string" />
+        <attr name="switchChecked" format="boolean" />
+        <attr name="switchEnabled" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============ SettingSelectorView ============ -->
+    <declare-styleable name="SettingSelectorView">
+        <attr name="selectorTitle" format="string" />
+        <attr name="selectorValue" format="string" />
+        <attr name="selectorEntries" format="string" />
+    </declare-styleable>
+
+    <!-- ============ ColorPickerView ============ -->
+    <declare-styleable name="ColorPickerView">
+        <attr name="cpDefaultColor" format="color" />
+        <attr name="cpShowRecent" format="boolean" />
+        <attr name="cpCellSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- ============ SliderView ============ -->
+    <declare-styleable name="SliderView">
+        <attr name="sliderTitle" format="string" />
+        <attr name="sliderMin" format="float" />
+        <attr name="sliderMax" format="float" />
+        <attr name="sliderStep" format="float" />
+        <attr name="sliderValue" format="float" />
+        <attr name="sliderUnit" format="string" />
+    </declare-styleable>
+
+    <!-- ============ PasswordInputView ============ -->
+    <declare-styleable name="PasswordInputView">
+        <attr name="pwdHint" format="string" />
+        <attr name="pwdShowStrength" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============ TagInputView ============ -->
+    <declare-styleable name="TagInputView">
+        <attr name="tagHint" format="string" />
+        <attr name="tagMax" format="integer" />
+    </declare-styleable>
+
+    <!-- ============ CategoryTabView ============ -->
+    <declare-styleable name="CategoryTabView">
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="tabIndicatorHeight" format="dimension" />
+    </declare-styleable>
+
+    <!-- ============ SearchBarView ============ -->
+    <declare-styleable name="SearchBarView">
+        <attr name="searchHint" format="string" />
+        <attr name="searchShowVoice" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============ ProgressRingView ============ -->
+    <declare-styleable name="ProgressRingView">
+        <attr name="ringStrokeWidth" format="dimension" />
+        <attr name="ringProgressColor" format="color" />
+        <attr name="ringTrackColor" format="color" />
+        <attr name="ringMax" format="float" />
+        <attr name="ringShowText" format="boolean" />
+    </declare-styleable>
+
+    <!-- ============ CollapsibleSettingGroup ============ -->
+    <declare-styleable name="CollapsibleSettingGroup">
+        <attr name="groupTitle" format="string" />
+        <attr name="groupExpanded" format="boolean" />
+    </declare-styleable>
+
+</resources>

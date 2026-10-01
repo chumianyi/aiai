@@ -1,0 +1,43 @@
+# === Gradle ===
+.gradle/
+build/
+
+# === Local configuration ===
+local.properties
+
+# === Android Studio / IntelliJ ===
+.idea/
+*.iml
+*.iws
+*.ipr
+captures/
+.externalNativeBuild/
+.cxx/
+
+# === Keystore files ===
+*.jks
+*.keystore
+keystore.properties
+
+# === Log files ===
+*.log
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Misc ===
+*.apk
+*.aab
+*.ap_
+*.dap
+*.tar
+*.gz
+*.zip
+*.rar
+*.7z
+*.bak
+*.tmp
+*.temp
+.secrets/
+.env

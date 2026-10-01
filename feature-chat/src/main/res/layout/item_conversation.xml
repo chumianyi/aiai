@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<com.aiai.chat.ui.view.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 内容区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/bg_card">
+
+        <com.aiai.chat.ui.view.ConversationCardView
+            android:id="@+id/conversation_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 操作按钮区域 -->
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="置顶"
+            android:textColor="@color/white"
+            android:background="#FF9800" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:background="#F44336" />
+    </LinearLayout>
+
+</com.aiai.chat.ui.view.SwipeRevealLayout>

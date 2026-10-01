@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ========== 基础网络权限 ========== -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- ========== 录音权限（语音输入） ========== -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- ========== 存储权限 ========== -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- ========== 相机权限 ========== -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- ========== 通知权限（Android 13+） ========== -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- ========== 前台服务/唤醒锁 ========== -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <!-- ========== 其他 ========== -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- ========== 特性声明 ========== -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+
+    <application
+        android:name=".AiAiApplication"
+        android:allowBackup="true"
+        android:backupAgent=".BackupAgent"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AiAi.Splash"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+
+        <!-- ========== 启动页 ========== -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AiAi.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- DeepLink: aiai://chat, aiai://settings, aiai://about -->
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="aiai" />
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="aiai.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <!-- ========== 主入口Activity ========== -->
+        <activity
+            android:name=".AppEntryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AiAi" />
+
+        <!-- ========== 聊天Activity（feature-chat） ========== -->
+        <activity
+            android:name="com.aiai.chat.ui.ChatActivity"
+            android:exported="false"
+            android:parentActivityName=".AppEntryActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.AiAi" />
+
+        <!-- ========== 设置相关Activity ========== -->
+        <activity
+            android:name="com.aiai.app.ui.settings.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".AppEntryActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <activity
+            android:name="com.aiai.app.ui.settings.ApiConfigActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.settings.SettingsActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <activity
+            android:name="com.aiai.app.ui.settings.ModelConfigActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.settings.SettingsActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <activity
+            android:name="com.aiai.app.ui.settings.ThemeActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.settings.SettingsActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <activity
+            android:name="com.aiai.app.ui.settings.LanguageActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.settings.SettingsActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <!-- ========== 搜索Activity ========== -->
+        <activity
+            android:name="com.aiai.app.ui.search.SearchActivity"
+            android:exported="false"
+            android:parentActivityName=".AppEntryActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.AiAi" />
+
+        <!-- ========== 关于Activity ========== -->
+        <activity
+            android:name="com.aiai.app.ui.about.AboutActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.settings.SettingsActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <activity
+            android:name="com.aiai.app.ui.about.LicenseActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.about.AboutActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <!-- ========== 提示词库Activity ========== -->
+        <activity
+            android:name="com.aiai.app.ui.prompt.PromptLibraryActivity"
+            android:exported="false"
+            android:parentActivityName=".AppEntryActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <activity
+            android:name="com.aiai.app.ui.prompt.PromptDetailActivity"
+            android:exported="false"
+            android:parentActivityName="com.aiai.app.ui.prompt.PromptLibraryActivity"
+            android:theme="@style/Theme.AiAi" />
+
+        <!-- ========== 分享接收Activity ========== -->
+        <activity
+            android:name="com.aiai.app.ShareReceiverActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AiAi.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <!-- ========== FileProvider ========== -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- ========== 桌面小组件 ========== -->
+        <receiver
+            android:name=".WidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <!-- ========== 分享BroadcastReceiver ========== -->
+        <receiver
+            android:name=".ShareReceiver"
+            android:exported="true" />
+
+        <!-- ========== 快捷方式 ========== -->
+        <meta-data
+            android:name="android.app.shortcuts"
+            android:resource="@xml/shortcuts" />
+
+    </application>
+
+</manifest>

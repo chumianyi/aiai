@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 应用主色 ============ -->
+    <color name="primary">#3D5AFE</color>
+    <color name="primary_dark">#2A3EC4</color>
+    <color name="primary_light">#8C9EFF</color>
+    <color name="primary_alpha">#333D5AFE</color>
+    <color name="accent">#FF6D00</color>
+    <color name="accent_light">#FFAB40</color>
+
+    <!-- ============ 背景色 ============ -->
+    <color name="bg_window">#F5F6FA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_divider">#ECEFF1</color>
+    <color name="bg_pressed">#F0F1F5</color>
+    <color name="bg_ripple">#1F000000</color>
+
+    <!-- ============ 深色模式背景 ============ -->
+    <color name="bg_window_dark">#121212</color>
+    <color name="bg_card_dark">#1E1E1E</color>
+    <color name="bg_divider_dark">#2C2C2C</color>
+    <color name="bg_amoled">#000000</color>
+
+    <!-- ============ 文本色 ============ -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#616161</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_disabled">#BDBDBD</color>
+    <color name="text_primary_dark">#EDEDED</color>
+    <color name="text_secondary_dark">#AAAAAA</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- ============ 功能色 ============ -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+    <color name="link">#1E88E5</color>
+
+    <!-- ============ 主题色候选板 ============ -->
+    <color name="theme_red">#E53935</color>
+    <color name="theme_pink">#D81B60</color>
+    <color name="theme_purple">#8E24AA</color>
+    <color name="theme_deep_purple">#5E35B1</color>
+    <color name="theme_indigo">#3949AB</color>
+    <color name="theme_blue">#1E88E5</color>
+    <color name="theme_light_blue">#039BE5</color>
+    <color name="theme_cyan">#00ACC1</color>
+    <color name="theme_teal">#00897B</color>
+    <color name="theme_green">#43A047</color>
+    <color name="theme_light_green">#7CB342</color>
+    <color name="theme_lime">#C0CA33</color>
+    <color name="theme_yellow">#FDD835</color>
+    <color name="theme_amber">#FFB300</color>
+    <color name="theme_orange">#FB8C00</color>
+    <color name="theme_deep_orange">#F4511E</color>
+
+    <!-- ============ 透明 ============ -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#80000000</color>
+
+</resources>

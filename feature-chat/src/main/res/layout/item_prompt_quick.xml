@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_prompt_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="提示词"
+    android:textSize="13sp"
+    android:textColor="@color/colorPrimary"
+    android:background="@drawable/bg_prompt_chip"
+    android:paddingHorizontal="14dp"
+    android:paddingVertical="8dp"
+    android:layout_marginHorizontal="6dp" />

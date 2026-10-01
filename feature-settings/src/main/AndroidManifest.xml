@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- 设置主页 -->
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:parentActivityName=".ui.activity.SettingsActivity" />
+        <!-- API 配置 -->
+        <activity
+            android:name=".ui.activity.ApiConfigActivity"
+            android:exported="false"
+            android:label="@string/settings_api_config" />
+        <!-- 密钥管理 -->
+        <activity
+            android:name=".ui.activity.KeyManagementActivity"
+            android:exported="false"
+            android:label="@string/settings_key_management" />
+        <!-- 通用设置 -->
+        <activity
+            android:name=".ui.activity.GeneralSettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_general" />
+        <!-- 外观设置 -->
+        <activity
+            android:name=".ui.activity.AppearanceSettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_appearance" />
+        <!-- 隐私设置 -->
+        <activity
+            android:name=".ui.activity.PrivacySettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_privacy" />
+        <!-- 关于 -->
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:exported="false"
+            android:label="@string/settings_about" />
+        <!-- 提示词库 -->
+        <activity
+            android:name=".ui.activity.PromptLibraryActivity"
+            android:exported="false"
+            android:label="@string/settings_prompt_library" />
+        <!-- 收藏管理 -->
+        <activity
+            android:name=".ui.activity.FavoriteManagerActivity"
+            android:exported="false"
+            android:label="@string/settings_favorite" />
+        <!-- 导出聊天 -->
+        <activity
+            android:name=".ui.activity.ExportChatActivity"
+            android:exported="false"
+            android:label="@string/settings_export_chat" />
+        <!-- 语音设置 -->
+        <activity
+            android:name=".ui.activity.VoiceSettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_voice" />
+        <!-- 图片生成设置 -->
+        <activity
+            android:name=".ui.activity.ImageGenSettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_image_gen" />
+        <!-- 插件管理 -->
+        <activity
+            android:name=".ui.activity.PluginManagerActivity"
+            android:exported="false"
+            android:label="@string/settings_plugin" />
+    </application>
+
+</manifest>

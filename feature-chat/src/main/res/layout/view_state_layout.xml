@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 爱Ai (AiAi)
+  ~ Licensed under the Apache License, Version 2.0
+  -->
+<com.aiai.chat.ui.view.StateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 内容视图 -->
+    <FrameLayout
+        android:id="@+id/state_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 加载视图 -->
+    <FrameLayout
+        android:id="@+id/state_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- 空视图 -->
+    <FrameLayout
+        android:id="@+id/state_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.aiai.chat.ui.view.EmptyStateView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- 错误视图 -->
+    <FrameLayout
+        android:id="@+id/state_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="加载失败，点击重试"
+            android:textColor="@color/text_secondary" />
+    </FrameLayout>
+
+</com.aiai.chat.ui.view.StateLayout>
