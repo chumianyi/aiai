@@ -192,15 +192,7 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <!-- ========== 动画样式 ========== -->
-    <style name="Animation.AiAi" parent="@android:style/Animation.Activity">
-        <item name="activityOpenEnterAnimation">@anim/activity_slide_in_right</item>
-        <item name="activityOpenExitAnimation">@anim/activity_slide_out_left</item>
-        <item name="activityCloseEnterAnimation">@anim/activity_slide_in_left</item>
-        <item name="activityCloseExitAnimation">@anim/activity_slide_out_right</item>
-    </style>
-
-    <!-- ========== 额外文字样式 ========== -->
+<!-- ========== 额外文字样式 ========== -->
     <style name="TextAppearance.AiAi.Headline" parent="TextAppearance.Material3.HeadlineSmall">
         <item name="android:textSize">@dimen/text_xl</item>
         <item name="android:textColor">@color/text_primary</item>
