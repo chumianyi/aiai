@@ -93,7 +93,7 @@ object DeeplinkManager {
      * @param params 参数
      * @return 深链接 URI
      */
-    fun buildDeeplink(path: String, params: Map<String, String> = emptyMap(): Uri {
+    fun buildDeeplink(path: String, params: Map<String, String> = emptyMap()): Uri {
         val builder = Uri.Builder()
             .scheme(SCHEME)
             .authority(HOST)
