@@ -53,7 +53,7 @@
 
     <!-- RoundedCornerLayout -->
     <declare-styleable name="RoundedCornerLayout">
-        <attr name="cornerRadius" format="dimension" />
+        <attr name="cornerRadius" />
         <attr name="topLeftRadius" format="dimension" />
         <attr name="topRightRadius" format="dimension" />
         <attr name="bottomLeftRadius" format="dimension" />
@@ -87,7 +87,7 @@
 
     <!-- ImageMessageView -->
     <declare-styleable name="ImageMessageView">
-        <attr name="cornerRadius" format="dimension" />
+        <attr name="cornerRadius" />
         <attr name="placeholderColor" format="color" />
     </declare-styleable>
 
