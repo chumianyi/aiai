@@ -17,7 +17,7 @@ package com.aiai.core.di
 
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.components.SingletonComponent
 
 /**
  * Repository 绑定模块（占位）。
@@ -25,7 +25,7 @@ import dagger.hilt.android.components.ApplicationComponent
  * 实际 Repository 接口和实现在 data 模块中绑定。
  */
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 abstract class RepositoryModule {
     // 实际绑定在 data 模块的 RepositoryModuleImpl 中完成
 }
