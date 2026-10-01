@@ -91,7 +91,10 @@ object InputMethodUtil {
      */
     fun getCurrentInputMethod(context: Context): String {
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        return imm.currentInputMethodBinding?.packageName ?: ""
+        return try {
+            val binding = imm.javaClass.getMethod("getCurrentInputMethodBinding").invoke(imm)
+            binding?.javaClass?.getMethod("getPackageName")?.invoke(binding) as? String ?: ""
+        } catch (e: Exception) { "" }
     }
 
     /**

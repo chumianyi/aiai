@@ -158,7 +158,9 @@ object NfcUtil {
 
         try {
             ndef.connect()
-            val messages = ndef.cachedNdefMessages
+            val messages = try {
+                ndef.javaClass.getMethod("getCachedNdefMessages").invoke(ndef) as? Array<*> ?: emptyArray<Any?>()
+            } catch (e: Exception) { emptyArray<Any?>() }
             callback.onNdefMessageRead(messages.toList())
             ndef.close()
         } catch (e: Exception) {

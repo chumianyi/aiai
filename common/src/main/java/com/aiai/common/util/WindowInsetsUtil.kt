@@ -15,6 +15,7 @@
  */
 package com.aiai.common.util
 
+import com.aiai.common.ext.dp2px
 import android.app.Activity
 import android.graphics.Rect
 import android.view.View
