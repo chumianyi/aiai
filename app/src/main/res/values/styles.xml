@@ -97,7 +97,7 @@
         <item name="hintTextColor">@color/primary</item>
     </style>
 
-    <style name="Widget.AiAi.EditText" parent="Widget.Material3.TextInputEditText">
+    <style name="Widget.AiAi.EditText" parent="Widget.AppCompat.EditText">
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textSize">@dimen/text_md</item>
         <item name="android:padding">@dimen/padding_input_h</item>
@@ -140,14 +140,14 @@
     </style>
 
     <!-- ========== 对话框 ========== -->
-    <style name="Widget.AiAi.Dialog" parent="Widget.Material3.MaterialAlertDialog">
+    <style name="Widget.AiAi.Dialog" parent="Theme.AppCompat.Dialog.Alert">
         <item name="dialogCornerRadius">@dimen/dialog_corner_radius</item>
         <item name="buttonBarPositiveButtonStyle">@style/Widget.AiAi.Button.Text</item>
         <item name="buttonBarNegativeButtonStyle">@style/Widget.AiAi.Button.Text</item>
     </style>
 
     <!-- ========== 底部弹窗 ========== -->
-    <style name="Widget.AiAi.BottomSheet" parent="Widget.Material3.BottomSheetModal">
+    <style name="Widget.AiAi.BottomSheet" parent="Widget.Design.BottomSheet.Modal">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.AiAi.BottomSheet</item>
     </style>
 
@@ -280,7 +280,7 @@
     </style>
 
     <!-- ========== 额外对话框 ========== -->
-    <style name="Widget.AiAi.Dialog.Wide" parent="Widget.Material3.MaterialAlertDialog">
+    <style name="Widget.AiAi.Dialog.Wide" parent="Theme.AppCompat.Dialog.Alert">
         <item name="dialogCornerRadius">@dimen/radius_xl</item>
     </style>
 
@@ -345,7 +345,7 @@
     </style>
 
     <!-- ========== 快捷设置 ========== -->
-    <style name="Widget.AiAi.Preference" parent="PreferenceScreen.Material3">
+    <style name="Widget.AiAi.Preference" parent="PreferenceScreen">
         <item name="android:iconSpaceReserved">true</item>
     </style>
 
@@ -358,4 +358,11 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+
+    <style name="Animation.AiAi" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_out_right</item>
+    </style>
 </resources>
